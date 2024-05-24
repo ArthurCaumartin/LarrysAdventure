@@ -13,22 +13,17 @@ public class PlayerMovement : MonoBehaviour
     private Camera _mainCam;
     private Vector2 _dampVelocity;
     private Rigidbody2D _rigidbody;
-    private TrailRenderer _trail;
-
     private Vector3 _lastFramePosition;
+
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        _trail = GetComponentInChildren<TrailRenderer>();
         _mainCam = Camera.main;
     }
 
     void Update()
     {
-        // print((_lastFramePosition - transform.position).magnitude);
-        // _trail.time = .015f / (_lastFramePosition - transform.position).magnitude;
-
         Vector2 moveTarget = Vector2.zero;
         if (_isScreenClicked)
         {

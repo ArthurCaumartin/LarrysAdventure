@@ -14,8 +14,8 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
-        Vector3 newDirection = transform.localPosition - _lastFramePosition;
-        _sprite.transform.up = newDirection;
-        _lastFramePosition = transform.localPosition;
+        Vector3 newDirection = transform.position - _lastFramePosition;
+        _sprite.transform.up = newDirection.normalized;
+        _lastFramePosition = transform.position;
     }
 }

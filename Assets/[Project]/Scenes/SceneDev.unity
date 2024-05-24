@@ -297,7 +297,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41413030}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
   m_Name: 
@@ -306,8 +306,8 @@ MonoBehaviour:
   m_PlayOnAwake: 1
   m_LoopMode: 1
   m_Method: 1
-  m_Duration: 11.01261
-  m_MaxSpeed: 10.29
+  m_Duration: 38.544136
+  m_MaxSpeed: 2.94
   m_EasingMode: 0
   m_AlignmentMode: 0
   m_ObjectForwardAxis: 5
@@ -4374,6 +4374,10 @@ PrefabInstance:
     - target: {fileID: 8902640944424044616, guid: 8e159063ef0d575409b40fb4e01f6d99, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902640944424044616, guid: 8e159063ef0d575409b40fb4e01f6d99, type: 3}
+      propertyPath: _bodyLenght
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

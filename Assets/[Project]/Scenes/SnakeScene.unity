@@ -175,21 +175,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7028394297198285225, guid: 8e159063ef0d575409b40fb4e01f6d99, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8902640944424044616, guid: 8e159063ef0d575409b40fb4e01f6d99, type: 3}
       propertyPath: _bodyLenght
-      value: 109
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902640944424044616, guid: 8e159063ef0d575409b40fb4e01f6d99, type: 3}
-      propertyPath: _lineQuality
-      value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902640944424044616, guid: 8e159063ef0d575409b40fb4e01f6d99, type: 3}
-      propertyPath: _bodyPartOffset
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

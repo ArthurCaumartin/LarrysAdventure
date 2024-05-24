@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class SnakeBody : MonoBehaviour
 {
+    [SerializeField] private bool DEBUG = false;
+    [Space]
     [SerializeField] private GameObject _bodyPartPrefabs;
     [SerializeField] private int _bodyLenght;
     [SerializeField] private float _lineQuality = .2f;
@@ -56,16 +58,16 @@ public class SnakeBody : MonoBehaviour
 
         Vector3 lastPointCreate = _headTrackPoints[_headTrackPoints.Count - 1];
 
-        float delta = 0;
+        //! Lis la liste a l'envers
         for (int i = _headTrackPoints.Count - 2; i > -1; i--)
         {
-            delta = Vector3.Distance(lastPointCreate, _headTrackPoints[i]);
+            float distanceWithLastPoint = Vector3.Distance(lastPointCreate, _headTrackPoints[i]);
 
-            if (lenthWithLast + delta > distance)
+            if (lenthWithLast + distanceWithLastPoint > distance)
                 return Vector3.Lerp(lastPointCreate, _headTrackPoints[i],
-                                    Mathf.InverseLerp(lenthWithLast, lenthWithLast + delta, distance));
+                                    Mathf.InverseLerp(lenthWithLast, lenthWithLast + distanceWithLastPoint, distance));
 
-            lenthWithLast += delta;
+            lenthWithLast += distanceWithLastPoint;
             lastPointCreate = _headTrackPoints[i];
         }
 
@@ -81,7 +83,7 @@ public class SnakeBody : MonoBehaviour
             {
                 _headTrackPoints.Add(transform.position);
                 // check if toomuch points -> RemoveAt 0
-                if (_headTrackPoints.Count > 1000 * (_bodyLenght / 2))
+                if (_headTrackPoints.Count > _bodyLenght * 200)
                     _headTrackPoints.RemoveAt(0);
             }
         }
@@ -98,6 +100,8 @@ public class SnakeBody : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        if(!DEBUG)
+            return;
         Gizmos.color = Color.green;
         foreach (var item in _headTrackPoints)
         {

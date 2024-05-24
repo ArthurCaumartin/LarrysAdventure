@@ -39,7 +39,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3396495959357800753}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -190,11 +190,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bodyPartPrefabs: {fileID: 5624770254715763629, guid: 550ebafa53ebe6849a6db1b2ad1e5f83, type: 3}
-  _bodyLenght: 4
-  _minDistance: 1
-  _speed: 8.8
-  _velocity: {x: 0, y: 0}
+  _bodyLenght: 109
+  _lineQuality: 0.005
+  _bodyPartOffset: 1
   _bodyPartList: []
+  _headTrackPoints: []
 --- !u!50 &9137559681246080253
 Rigidbody2D:
   serializedVersion: 4
