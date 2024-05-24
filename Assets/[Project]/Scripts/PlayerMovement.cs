@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,35 +8,30 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed = 0.1f;
     private bool _isScreenClicked = false;
-    private Vector2 _inputScreenPos;
-    private Camera _mainCam;
-    private Vector2 _dampVelocity;
-    private Rigidbody2D _rigidbody;
+    private Vector2 _worldInputVector;
+    private Camera mainCam;
+    private Vector2 dampVelocity;
     private Vector3 _lastFramePosition;
-
 
     void Start()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _mainCam = Camera.main;
+        mainCam = Camera.main;
+        _lastFramePosition = transform.localPosition;
     }
 
     void Update()
     {
+        transform.forward = (transform.localPosition - _lastFramePosition).normalized;
+
         Vector2 moveTarget = Vector2.zero;
         if (_isScreenClicked)
-        {
-            moveTarget = Vector2.SmoothDamp(transform.localPosition
-                                          , transform.parent.InverseTransformPoint(_mainCam.ScreenToWorldPoint(_inputScreenPos))
-                                          , ref _dampVelocity, _speed, Mathf.Infinity, Time.deltaTime);
-        }
+            moveTarget = Vector2.SmoothDamp(transform.position, _worldInputVector, ref dampVelocity, _speed, Mathf.Infinity, Time.deltaTime);
         else
-            moveTarget = transform.localPosition;
+            moveTarget = transform.position;
 
-        transform.localPosition = moveTarget;
-        // _rigidbody.MovePosition(moveTarget);
+        transform.position = moveTarget;
 
-        _lastFramePosition = transform.position;
+        _lastFramePosition = transform.localPosition;
     }
 
     private void OnPointerClic(InputValue value)
@@ -47,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnPointerMove(InputValue value)
     {
-        // print(value.Get<Vector2>());
-        _inputScreenPos = value.Get<Vector2>();
+        _worldInputVector = mainCam.ScreenToWorldPoint(value.Get<Vector2>());
     }
 }
