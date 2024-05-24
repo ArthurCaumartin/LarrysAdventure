@@ -27,34 +27,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "43b964ea-2a6b-4c62-9a45-53bd430c9535",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PointerMove",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ee4d8354-e791-4868-a1b9-1f937c4c701e",
-                    "path": "<Pointer>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PointerMove",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "bca6c5ae-de35-406b-89f4-15e98b8905f4",
                     "path": "<Pointer>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "PointerClic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dc1f9909-ad76-4383-8065-63aa97f77941",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PointerMove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

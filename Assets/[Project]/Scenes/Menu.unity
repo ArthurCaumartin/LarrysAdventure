@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!1 &133458864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2089,134 @@ CanvasRenderer:
   m_GameObject: {fileID: 814587672}
   m_CullTransparentMesh: 1
 --- !u!1 &832067522
+=======
+--- !u!1001 &162864399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1330.0408
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.070713
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -333.4807
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533431410782625712, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+--- !u!114 &162864400 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8697757002595573008, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+  m_PrefabInstance: {fileID: 162864399}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b07448e37d714d82bb1c656f3edd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &228014921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.17843394
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22214125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003164948
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345093108653877278, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007911901616045034, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_Name
+      value: Transitioner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+--- !u!1 &268864793
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2095,6 +2224,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 832067523}
   m_Layer: 5
   m_Name: Fill Area
@@ -3018,6 +3148,11 @@ GameObject:
   - component: {fileID: 1072629893}
   - component: {fileID: 1072629892}
   - component: {fileID: 1072629891}
+=======
+  - component: {fileID: 268864796}
+  - component: {fileID: 268864795}
+  - component: {fileID: 268864794}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3025,21 +3160,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!81 &1072629891
+=======
+--- !u!81 &268864794
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1072629890}
   m_Enabled: 1
 --- !u!20 &1072629892
+=======
+  m_GameObject: {fileID: 268864793}
+  m_Enabled: 1
+--- !u!20 &268864795
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1072629890}
+=======
+  m_GameObject: {fileID: 268864793}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -3084,13 +3233,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!4 &1072629893
+=======
+--- !u!4 &268864796
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1072629890}
+=======
+  m_GameObject: {fileID: 268864793}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -3099,7 +3256,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!1 &1077573489
+=======
+--- !u!1 &474742813
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3107,29 +3268,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 1077573490}
   - component: {fileID: 1077573493}
   - component: {fileID: 1077573492}
   - component: {fileID: 1077573491}
   m_Layer: 5
   m_Name: Credits
+=======
+  - component: {fileID: 474742814}
+  - component: {fileID: 474742817}
+  - component: {fileID: 474742816}
+  - component: {fileID: 474742815}
+  m_Layer: 5
+  m_Name: Button Option
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!224 &1077573490
+=======
+--- !u!224 &474742814
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1077573489}
+=======
+  m_GameObject: {fileID: 474742813}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - {fileID: 235344149}
   m_Father: {fileID: 1203585541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3139,12 +3318,27 @@ RectTransform:
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1077573491
+=======
+  - {fileID: 1834753683}
+  m_Father: {fileID: 769846753}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 421.21097, y: -165.78522}
+  m_SizeDelta: {x: 117.5752, y: 89.1378}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &474742815
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1077573489}
+=======
+  m_GameObject: {fileID: 474742813}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -3178,17 +3372,29 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_TargetGraphic: {fileID: 1077573492}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1077573492
+=======
+  m_TargetGraphic: {fileID: 474742816}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &474742816
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1077573489}
+=======
+  m_GameObject: {fileID: 474742813}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -3212,15 +3418,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!222 &1077573493
+=======
+--- !u!222 &474742817
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1077573489}
   m_CullTransparentMesh: 1
 --- !u!1 &1121641426
+=======
+  m_GameObject: {fileID: 474742813}
+  m_CullTransparentMesh: 1
+--- !u!1 &637256504
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3228,16 +3444,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 1121641427}
   - component: {fileID: 1121641429}
   - component: {fileID: 1121641428}
   m_Layer: 5
   m_Name: Fill
+=======
+  - component: {fileID: 637256507}
+  - component: {fileID: 637256506}
+  - component: {fileID: 637256505}
+  m_Layer: 0
+  m_Name: EventSystem
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!224 &1121641427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3258,11 +3483,15 @@ RectTransform:
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1121641428
+=======
+--- !u!114 &637256505
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1121641426}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3289,18 +3518,61 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1121641429
 CanvasRenderer:
+=======
+  m_GameObject: {fileID: 637256504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+--- !u!114 &637256506
+MonoBehaviour:
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1121641426}
   m_CullTransparentMesh: 1
 --- !u!1 &1170776494
 GameObject:
+=======
+  m_GameObject: {fileID: 637256504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &637256507
+Transform:
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1170776495}
@@ -3320,11 +3592,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170776494}
+=======
+  m_GameObject: {fileID: 637256504}
+  serializedVersion: 2
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_Father: {fileID: 2128196644}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3430,6 +3707,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 1170776494}
   m_CullTransparentMesh: 1
 --- !u!1 &1177886165
+=======
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &769846752
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3437,22 +3719,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 1177886166}
   - component: {fileID: 1177886168}
   - component: {fileID: 1177886167}
   m_Layer: 5
   m_Name: Background
+=======
+  - component: {fileID: 769846753}
+  m_Layer: 5
+  m_Name: Button Container
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!224 &1177886166
+=======
+--- !u!224 &769846753
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1177886165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -3528,11 +3821,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198565771}
+=======
+  m_GameObject: {fileID: 769846752}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - {fileID: 1177886166}
   - {fileID: 832067523}
   - {fileID: 1049098337}
@@ -4025,6 +4322,18 @@ CanvasRenderer:
   m_GameObject: {fileID: 1320521880}
   m_CullTransparentMesh: 1
 --- !u!1 &1396073802
+=======
+  - {fileID: 1318755454}
+  - {fileID: 474742814}
+  m_Father: {fileID: 2122445469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1318755453
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4032,22 +4341,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 1396073803}
   - component: {fileID: 1396073805}
   - component: {fileID: 1396073804}
   m_Layer: 5
   m_Name: Background
+=======
+  - component: {fileID: 1318755454}
+  - component: {fileID: 1318755457}
+  - component: {fileID: 1318755456}
+  - component: {fileID: 1318755455}
+  m_Layer: 5
+  m_Name: Button Dev Scene
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!224 &1396073803
+=======
+--- !u!224 &1318755454
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1396073802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4194,11 +4517,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524450187}
+=======
+  m_GameObject: {fileID: 1318755453}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - {fileID: 2128196644}
   - {fileID: 1625325969}
   - {fileID: 173424532}
@@ -4655,12 +4982,27 @@ RectTransform:
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1931653907
+=======
+  - {fileID: 1987884103}
+  m_Father: {fileID: 769846753}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 6.7822}
+  m_SizeDelta: {x: 203.7107, y: 113.5644}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1318755455
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1931653905}
+=======
+  m_GameObject: {fileID: 1318755453}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -4694,17 +5036,41 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_TargetGraphic: {fileID: 1931653908}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1931653908
+=======
+  m_TargetGraphic: {fileID: 1318755456}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 162864400}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadDevScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1318755456
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1931653905}
+=======
+  m_GameObject: {fileID: 1318755453}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -4728,15 +5094,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!222 &1931653909
+=======
+--- !u!222 &1318755457
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 1931653905}
   m_CullTransparentMesh: 1
 --- !u!1 &1945367273
+=======
+  m_GameObject: {fileID: 1318755453}
+  m_CullTransparentMesh: 1
+--- !u!1 &1834753682
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4744,6 +5120,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 1945367274}
   - component: {fileID: 1945367277}
   - component: {fileID: 1945367276}
@@ -4868,6 +5245,11 @@ GameObject:
   - component: {fileID: 2008953040}
   - component: {fileID: 2008953042}
   - component: {fileID: 2008953041}
+=======
+  - component: {fileID: 1834753683}
+  - component: {fileID: 1834753685}
+  - component: {fileID: 1834753684}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4875,32 +5257,52 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!224 &2008953040
+=======
+--- !u!224 &1834753683
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 2008953039}
+=======
+  m_GameObject: {fileID: 1834753682}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_Father: {fileID: 1945367274}
+=======
+  m_Father: {fileID: 474742814}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!114 &2008953041
+=======
+--- !u!114 &1834753684
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 2008953039}
+=======
+  m_GameObject: {fileID: 1834753682}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -4914,7 +5316,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_text: Quitter
+=======
+  m_text: Option
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4945,8 +5351,13 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_fontSizeMin: 0
   m_fontSizeMax: 0
+=======
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -4957,12 +5368,20 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_enableWordWrapping: 0
+=======
+  m_enableWordWrapping: 1
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_enableKerning: 0
+=======
+  m_enableKerning: 1
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -4983,15 +5402,25 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!222 &2008953042
+=======
+--- !u!222 &1834753685
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 2008953039}
   m_CullTransparentMesh: 1
 --- !u!1 &2128196643
+=======
+  m_GameObject: {fileID: 1834753682}
+  m_CullTransparentMesh: 1
+--- !u!1 &1987884102
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4999,23 +5428,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - component: {fileID: 2128196644}
   - component: {fileID: 2128196647}
   - component: {fileID: 2128196646}
   - component: {fileID: 2128196645}
   m_Layer: 5
   m_Name: PlayButton
+=======
+  - component: {fileID: 1987884103}
+  - component: {fileID: 1987884105}
+  - component: {fileID: 1987884104}
+  m_Layer: 5
+  m_Name: Text (TMP)
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
 --- !u!224 &2128196644
+=======
+--- !u!224 &1987884103
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 2128196643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -5031,11 +5473,28 @@ RectTransform:
   m_SizeDelta: {x: 620.9282, y: 116.42401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128196645
+=======
+  m_GameObject: {fileID: 1987884102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1318755454}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1987884104
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 2128196643}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5084,6 +5543,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+=======
+  m_GameObject: {fileID: 1987884102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -5094,6 +5559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -5105,17 +5571,204 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &2128196647
+=======
+  m_text: Start Dev Scene
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1987884105
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   m_GameObject: {fileID: 2128196643}
   m_CullTransparentMesh: 1
+=======
+  m_GameObject: {fileID: 1987884102}
+  m_CullTransparentMesh: 1
+--- !u!1 &2122445465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2122445469}
+  - component: {fileID: 2122445468}
+  - component: {fileID: 2122445467}
+  - component: {fileID: 2122445466}
+  m_Layer: 5
+  m_Name: Canvas - Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2122445466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122445465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2122445467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122445465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1000, y: 1000}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2122445468
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122445465}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &2122445469
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122445465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 769846753}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD:Assets/Scenes/Menu.unity
   - {fileID: 1072629893}
   - {fileID: 228718098}
   - {fileID: 805922959}
+=======
+  - {fileID: 268864796}
+  - {fileID: 162864399}
+  - {fileID: 228014921}
+  - {fileID: 637256507}
+  - {fileID: 2122445469}
+>>>>>>> DevArthur:Assets/[Project]/Scenes/Menu.unity
