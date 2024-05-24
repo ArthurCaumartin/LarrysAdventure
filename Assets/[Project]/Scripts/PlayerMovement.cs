@@ -12,14 +12,23 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _inputScreenPos;
     private Camera _mainCam;
     private Vector2 _dampVelocity;
+    private Rigidbody2D _rigidbody;
+    private TrailRenderer _trail;
+
+    private Vector3 _lastFramePosition;
 
     void Start()
     {
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _trail = GetComponentInChildren<TrailRenderer>();
         _mainCam = Camera.main;
     }
 
     void Update()
     {
+        // print((_lastFramePosition - transform.position).magnitude);
+        // _trail.time = .015f / (_lastFramePosition - transform.position).magnitude;
+
         Vector2 moveTarget = Vector2.zero;
         if (_isScreenClicked)
         {
@@ -31,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
             moveTarget = transform.localPosition;
 
         transform.localPosition = moveTarget;
+        // _rigidbody.MovePosition(moveTarget);
+
+        _lastFramePosition = transform.position;
     }
 
     private void OnPointerClic(InputValue value)
@@ -40,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnPointerMove(InputValue value)
     {
+        // print(value.Get<Vector2>());
         _inputScreenPos = value.Get<Vector2>();
     }
 }

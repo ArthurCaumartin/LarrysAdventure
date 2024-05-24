@@ -55,7 +55,7 @@ public class Transitioner : MonoBehaviour
             {
                 _resetLevelImage.localScale = Vector3.Lerp(Vector3.one, Vector3.zero, time);
             }, 0, 1, _resetAnimationDuration / 2)
-            .SetDelay(1f)
+            .SetDelay(.5f)
             .SetUpdate(true)
             .OnComplete(() =>
             {

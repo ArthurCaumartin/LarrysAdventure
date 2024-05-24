@@ -38,8 +38,8 @@
                 },
                 {
                     "name": "",
-                    "id": "df29b926-6400-452f-b6a8-25577999e91a",
-                    "path": "<Touchscreen>/position",
+                    "id": "dc1f9909-ad76-4383-8065-63aa97f77941",
+                    "path": "<Pointer>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
