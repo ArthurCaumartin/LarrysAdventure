@@ -19,12 +19,12 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void LoadDevScene()
+    public void LoadScene(string sceneName)
     {
         Time.timeScale = 0;
         Transitioner.instance.LarryTransition(() =>
         {
-            SceneManager.LoadScene("SceneDev");
+            SceneManager.LoadScene(sceneName);
         }, () => Time.timeScale = 1);
     }
 

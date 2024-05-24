@@ -9,12 +9,12 @@ public class Transitioner : MonoBehaviour
     public static Transitioner instance;
 
     [Header("Larry's Transition :")]
-    [SerializeField] private float _larryTransitionDuration;
+    [SerializeField] private float _larryTransitionDuration = 1f;
     [SerializeField] private RectTransform _larrysContainer;
 
     [Header("Reset Level Transition :")]
 
-    [SerializeField] private float _resetAnimationDuration;
+    [SerializeField] private float _resetAnimationDuration = 1f;
     [SerializeField] private RectTransform _resetLevelImage;
 
 
