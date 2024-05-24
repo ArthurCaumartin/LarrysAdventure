@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
+    
     private void Awake()
     {
         if(instance)
@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        //TODO extract to SceneLoader class
         Time.timeScale = 0;
         Transitioner.instance.LarryTransition(() =>
         {
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetCurrentLevel()
     {
+        //TODO extract to SceneLoader class
         Time.timeScale = 0;
         Transitioner.instance.ResetLevelTransition(() =>
         {
