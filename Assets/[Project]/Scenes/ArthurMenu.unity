@@ -883,12 +883,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2650522953309263607, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650522953309263607, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650522953309263607, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650522953309263607, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650522953309263607, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 122.45984
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2650522953309263607, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000015258789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
       propertyPath: _skinButtonPrefabs

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Shop : MonoBehaviour
 
     [SerializeField] private GameObject _skinButtonPrefabs;
     [Space]
+    [SerializeField] private ScrollRect _scrollRect;
     [SerializeField] private RectTransform _shopContainer;
     [SerializeField] private RectTransform _shopBackground;
     [SerializeField] private RectTransform _shopButtonLayout;
@@ -22,7 +24,7 @@ public class Shop : MonoBehaviour
 
     public void OnClick(ScriptableSkin skinClic)
     {
-        
+
     }
 
     private void LoadShopButton()
@@ -32,6 +34,7 @@ public class Shop : MonoBehaviour
             print("NO SKIN IN SHOP !");
             return;
         }
+
         for (int i = 0; i < _scriptableSkinList.Count; i++)
         {
             GameObject newButton = Instantiate(_skinButtonPrefabs, _shopButtonLayout);
@@ -54,6 +57,10 @@ public class Shop : MonoBehaviour
     private void SetShopPosition(bool shopOpenState)
     {
         //TODO dotween anim
+        _scrollRect.inertia = false;
+        _shopButtonLayout.anchoredPosition = Vector2.zero;
+        _scrollRect.inertia = true;
+
         _shopContainer.anchoredPosition =
         new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * 1.05f, 0);
     }
