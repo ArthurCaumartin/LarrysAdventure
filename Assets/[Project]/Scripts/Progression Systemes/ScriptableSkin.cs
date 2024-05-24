@@ -11,6 +11,6 @@ public class SkinRenderData
 public class ScriptableSkin : ScriptableObject
 {
     public string skinName;
-    public int coinValue = 10;
+    public int coinPrice = 10;
     public SkinRenderData skinRenderData;
 }

@@ -14,6 +14,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private RectTransform _shopButtonLayout;
     [Space]
     [SerializeField] private List<ScriptableSkin> _scriptableSkinList;
+    private List<ShopButton> _shopButtonList = new List<ShopButton>();
     private bool _isShopOpen = true;
 
     private void Start()
@@ -22,14 +23,20 @@ public class Shop : MonoBehaviour
         OpenShop(false);
     }
 
-    public void OnClick(ScriptableSkin skinClic)
+    public void OnClick(ScriptableSkin skinClic, ShopButton button)
     {
+        if (GameManager.instance.TryBuyStuff(skinClic.coinPrice))
+        {
+            foreach (var item in _shopButtonList)
+                item.SetSelectState(false);
 
+            button.SetSelectState(true);
+        }
     }
 
     private void LoadShopButton()
     {
-        if(_scriptableSkinList.Count == 0)
+        if (_scriptableSkinList.Count == 0)
         {
             print("NO SKIN IN SHOP !");
             return;
@@ -39,6 +46,7 @@ public class Shop : MonoBehaviour
         {
             GameObject newButton = Instantiate(_skinButtonPrefabs, _shopButtonLayout);
             newButton.GetComponent<ShopButton>().Inistialize(_scriptableSkinList[i], this);
+            _shopButtonList.Add(newButton.GetComponent<ShopButton>());
         }
     }
 
