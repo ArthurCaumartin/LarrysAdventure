@@ -13,20 +13,36 @@ public class Shop : MonoBehaviour
     [SerializeField] private RectTransform _shopBackground;
     [SerializeField] private RectTransform _shopButtonLayout;
     [Space]
-    [SerializeField] private List<ScriptableSkin> _scriptableSkinList;
+    private List<ScriptableSkin> _scriptableSkinList;
     private List<ShopButton> _shopButtonList = new List<ShopButton>();
     private bool _isShopOpen = true;
 
+    private SkinManager _skinManager;
+
     private void Start()
     {
-        LoadShopButton();
+        _skinManager = GameManager.instance.GetComponent<SkinManager>();
+        _scriptableSkinList = _skinManager.GetSkinList();
+
+        LoadShop();
         OpenShop(false);
     }
 
     public void OnClick(ScriptableSkin skinClic, ShopButton button)
     {
-        if (GameManager.instance.TryBuyStuff(skinClic.coinPrice))
+        if(_skinManager.IsSkinAlreadyBuy(skinClic.skinName))
         {
+            print("Skin already bought !");
+            foreach (var item in _shopButtonList)
+                item.SetSelectState(false);
+
+            button.SetSelectState(true);
+            return;
+        }
+
+        if (_skinManager.TryBuySkin(skinClic))
+        {
+            print("Buy new Skin");
             foreach (var item in _shopButtonList)
                 item.SetSelectState(false);
 
@@ -34,7 +50,7 @@ public class Shop : MonoBehaviour
         }
     }
 
-    private void LoadShopButton()
+    private void LoadShop()
     {
         if (_scriptableSkinList.Count == 0)
         {
@@ -45,7 +61,7 @@ public class Shop : MonoBehaviour
         for (int i = 0; i < _scriptableSkinList.Count; i++)
         {
             GameObject newButton = Instantiate(_skinButtonPrefabs, _shopButtonLayout);
-            newButton.GetComponent<ShopButton>().Inistialize(_scriptableSkinList[i], this);
+            newButton.GetComponent<ShopButton>().Inistialize(_scriptableSkinList[i], this, _skinManager);
             _shopButtonList.Add(newButton.GetComponent<ShopButton>());
         }
     }

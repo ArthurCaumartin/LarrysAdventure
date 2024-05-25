@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    private CurrencyManager _currencyManager;
     
     private void Awake()
     {
@@ -18,22 +17,6 @@ public class GameManager : MonoBehaviour
         
         instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    void Start()
-    {
-        _currencyManager = GetComponent<CurrencyManager>();
-    }
-
-    public bool TryBuyStuff(int price)
-    {
-        if(_currencyManager.CoinNumber >= price)
-        {
-            _currencyManager.BuyStuff(price);
-            return true;
-        }
-
-        return false;
     }
 
     public void LoadScene(string sceneName)
