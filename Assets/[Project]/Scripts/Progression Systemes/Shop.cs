@@ -16,7 +16,6 @@ public class Shop : MonoBehaviour
     private List<ScriptableSkin> _scriptableSkinList;
     private List<ShopButton> _shopButtonList = new List<ShopButton>();
     private bool _isShopOpen = true;
-
     private SkinManager _skinManager;
 
     private void Start()
@@ -34,7 +33,7 @@ public class Shop : MonoBehaviour
     {
         if(_skinManager.IsSkinAlreadyBuy(skinClic.skinName))
         {
-            print("Skin already bought !");
+            _skinManager.SetcurrentSkinSkin(skinClic);
             foreach (var item in _shopButtonList)
                 item.SetSelectState(false);
 
@@ -44,6 +43,7 @@ public class Shop : MonoBehaviour
 
         if (_skinManager.TryBuySkin(skinClic))
         {
+            _skinManager.SetcurrentSkinSkin(skinClic);
             print("Buy new Skin");
             foreach (var item in _shopButtonList)
                 item.SetSelectState(false);

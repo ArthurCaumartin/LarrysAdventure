@@ -1,18 +1,30 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SkinManager : MonoBehaviour
 {
+    [SerializeField] private ScriptableSkin _baseSkin;
     [SerializeField] private List<ScriptableSkin> _skinList;
 
     private PlayerPrefRecorder _playerPrefRecorder;
     private CurrencyManager _currencyManager;
 
+    public static ScriptableSkin CurrentSkin;
+
     void Start()
     {
+        CurrentSkin = _baseSkin;
+
         _playerPrefRecorder = GetComponent<PlayerPrefRecorder>();
         _currencyManager = GetComponent<CurrencyManager>();
+    }
+
+    public void SetcurrentSkinSkin(ScriptableSkin skinToSet)
+    {
+        if (CurrentSkin == skinToSet)
+            return;
+
+        CurrentSkin = skinToSet;
     }
 
     public List<ScriptableSkin> GetSkinList()
