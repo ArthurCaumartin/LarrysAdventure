@@ -72,6 +72,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfc2a337f1afa3448be811632a77302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _skinList:
+  - {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
+  - {fileID: 11400000, guid: b3517db8c5020474d8582800855a5fbd, type: 2}
+  - {fileID: 11400000, guid: 214e262387b72884db97cf03d473804a, type: 2}
+  - {fileID: 11400000, guid: 471129ae02cbb7c419cdb486e4722a9e, type: 2}
+  - {fileID: 11400000, guid: c3caaf0b8f0ae1c469e5eb6f127f6641, type: 2}
+  - {fileID: 11400000, guid: b353bd99697664b4190d4b812fbdde4d, type: 2}
+  - {fileID: 11400000, guid: 1d85c8c1229214646b96c0a9b6dc3d9c, type: 2}
+  - {fileID: 11400000, guid: cc4cd330a43aba44f8b8e98e9d88ec8c, type: 2}
+  - {fileID: 11400000, guid: 54eac26d22f0bc04780ed8d9f925aec7, type: 2}
 --- !u!114 &2299594551517623182
 MonoBehaviour:
   m_ObjectHideFlags: 0

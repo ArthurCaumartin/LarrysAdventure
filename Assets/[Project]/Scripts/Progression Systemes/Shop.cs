@@ -24,6 +24,8 @@ public class Shop : MonoBehaviour
         _skinManager = GameManager.instance.GetComponent<SkinManager>();
         _scriptableSkinList = _skinManager.GetSkinList();
 
+        GameManager.instance.OnPlayerPrefReset.AddListener(LoadShop);
+
         LoadShop();
         OpenShop(false);
     }

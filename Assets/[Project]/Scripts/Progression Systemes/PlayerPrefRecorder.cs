@@ -18,5 +18,6 @@ public class PlayerPrefRecorder : MonoBehaviour
     public void ClearAllProgression()
     {
         PlayerPrefs.DeleteAll();
+        GameManager.instance.OnPlayerPrefReset.Invoke();
     }
 }

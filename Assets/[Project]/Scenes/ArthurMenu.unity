@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &16629351 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4113171914149337731, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
+  m_PrefabInstance: {fileID: 8944019141179009361}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &65315455
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,46 +595,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.size
-      value: 9
+    - target: {fileID: 2800870892288844584, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: _coinTextList.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[0]
+    - target: {fileID: 2800870892288844584, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
+      propertyPath: _coinTextList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: b3517db8c5020474d8582800855a5fbd, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 214e262387b72884db97cf03d473804a, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 471129ae02cbb7c419cdb486e4722a9e, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: c3caaf0b8f0ae1c469e5eb6f127f6641, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: b353bd99697664b4190d4b812fbdde4d, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: 1d85c8c1229214646b96c0a9b6dc3d9c, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: cc4cd330a43aba44f8b8e98e9d88ec8c, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: 54eac26d22f0bc04780ed8d9f925aec7, type: 2}
+      objectReference: {fileID: 16629351}
     - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -869,46 +848,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: b3517db8c5020474d8582800855a5fbd, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 214e262387b72884db97cf03d473804a, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 471129ae02cbb7c419cdb486e4722a9e, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: c3caaf0b8f0ae1c469e5eb6f127f6641, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: b353bd99697664b4190d4b812fbdde4d, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: 1d85c8c1229214646b96c0a9b6dc3d9c, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: cc4cd330a43aba44f8b8e98e9d88ec8c, type: 2}
-    - target: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-      propertyPath: _scriptableSkinList.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: 54eac26d22f0bc04780ed8d9f925aec7, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
