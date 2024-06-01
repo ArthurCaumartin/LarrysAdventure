@@ -659,10 +659,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a8d979c4b00f16f499de3345c110a164, type: 2}
     - target: {fileID: 2800870892288844584, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _coinTextList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2800870892288844584, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
       propertyPath: _coinTextList.Array.data[0]
       value: 
       objectReference: {fileID: 16629351}
