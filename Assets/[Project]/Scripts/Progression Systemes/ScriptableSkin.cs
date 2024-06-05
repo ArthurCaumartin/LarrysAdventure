@@ -13,7 +13,7 @@ public class SkinRenderData
     //TODO faire un apelle de fonction qui send le bon sprite en fonction de isBodyLine
 }
 
-[CreateAssetMenu(menuName = "LarrysAdventure/Skin")]
+[CreateAssetMenu(menuName = "LarrysAdventure/Skin ٩(^‿^)۶")]
 public class ScriptableSkin : ScriptableObject
 {
     public string skinName;
