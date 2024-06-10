@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField] public GameData gameData;
+    [Space]
+    [SerializeField] private SkinManager _skinManager;
     
     private void Awake()
     {
@@ -17,6 +21,24 @@ public class GameManager : MonoBehaviour
         
         instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Start()
+    {
+        //CanvasManager.SetCoinText(gameData.coinQuantity);
+        //CanvasManager.SetLevelUI(gameData.levelList);
+
+        _skinManager.SetSkinFromData(gameData.baseSkin, gameData.skinList);
+    }
+
+    public int GetCoinQuantity()
+    {
+        return gameData.coinQuantity;
+    }
+
+    public void BuyStuff(int price)
+    {
+        gameData.coinQuantity -= price;
     }
 
     public void LoadScene(string sceneName)

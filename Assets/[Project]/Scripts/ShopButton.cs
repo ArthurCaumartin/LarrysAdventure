@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class ShopButton : MonoBehaviour
 {
+    [SerializeField] private Image _eggImage;
     [SerializeField] private Color _notBoughtColor;
     [SerializeField] private Color _unSelectColor;
     [SerializeField] private Color _SelectColor;
@@ -20,6 +21,7 @@ public class ShopButton : MonoBehaviour
         _shop = shop;
         _skinManager = skinManager;
 
+        _eggImage.sprite = skin.renderData.eggSprite;
         GetComponentInChildren<TextMeshProUGUI>().text = skin.skinName;
     }
 

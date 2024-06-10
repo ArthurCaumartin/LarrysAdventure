@@ -1,28 +1,39 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SkinManager : MonoBehaviour
 {
+    [SerializeField] private Shop _shop;
+    [SerializeField] private ScriptableSkin _baseSkin;
     [SerializeField] private List<ScriptableSkin> _skinList;
-
     private PlayerPrefRecorder _playerPrefRecorder;
-    private CurrencyManager _currencyManager;
+    public static ScriptableSkin CurrentSkin;
 
     void Start()
     {
         _playerPrefRecorder = GetComponent<PlayerPrefRecorder>();
-        _currencyManager = GetComponent<CurrencyManager>();
+    }
+
+    public void SetSkinFromData(ScriptableSkin baseSkin, List<ScriptableSkin> skinList)
+    {
+        _baseSkin = baseSkin;
+        _skinList = skinList;
+
+        SetCurrentSkinSkin(_baseSkin);
+        _shop.LoadShop(_skinList);
+    }
+
+    public void SetCurrentSkinSkin(ScriptableSkin skinToSet)
+    {
+        if (CurrentSkin == skinToSet)
+            return;
+
+        CurrentSkin = skinToSet;
     }
 
     public List<ScriptableSkin> GetSkinList()
     {
         return _skinList;
-    }
-
-    public void BuySkin(string skinName)
-    {
-        _playerPrefRecorder.SaveData(skinName, 1);
     }
 
     public bool IsSkinAlreadyBuy(string skinName)
@@ -32,10 +43,11 @@ public class SkinManager : MonoBehaviour
 
     public bool TryBuySkin(ScriptableSkin skin)
     {
-        if (_currencyManager.CoinNumber >= skin.coinPrice)
+        if (GameManager.instance.GetCoinQuantity() >= skin.coinPrice)
         {
-            _currencyManager.BuyStuff(skin.coinPrice);
-            BuySkin(skin.skinName);
+            SetCurrentSkinSkin(skin);
+            GameManager.instance.BuyStuff(skin.coinPrice);
+            _playerPrefRecorder.SaveData(skin.skinName, 1);
             return true;
         }
 

@@ -16,23 +16,18 @@ public class Shop : MonoBehaviour
     private List<ScriptableSkin> _scriptableSkinList;
     private List<ShopButton> _shopButtonList = new List<ShopButton>();
     private bool _isShopOpen = true;
-
     private SkinManager _skinManager;
 
     private void Start()
     {
         _skinManager = GameManager.instance.GetComponent<SkinManager>();
-        _scriptableSkinList = _skinManager.GetSkinList();
-
-        LoadShop();
-        OpenShop(false);
     }
 
     public void OnClick(ScriptableSkin skinClic, ShopButton button)
     {
         if(_skinManager.IsSkinAlreadyBuy(skinClic.skinName))
         {
-            print("Skin already bought !");
+            _skinManager.SetCurrentSkinSkin(skinClic);
             foreach (var item in _shopButtonList)
                 item.SetSelectState(false);
 
@@ -50,8 +45,10 @@ public class Shop : MonoBehaviour
         }
     }
 
-    private void LoadShop()
+    public void LoadShop(List<ScriptableSkin> skinList)
     {
+        _scriptableSkinList = skinList;
+
         if (_scriptableSkinList.Count == 0)
         {
             print("NO SKIN IN SHOP !");

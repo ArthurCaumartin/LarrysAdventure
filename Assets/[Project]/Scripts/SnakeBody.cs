@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SnakeBody : MonoBehaviour
 {
@@ -14,22 +15,27 @@ public class SnakeBody : MonoBehaviour
     [SerializeField] private float _bodyPartOffset = .4f;
     [SerializeField] private List<Transform> _bodyPartList = new List<Transform>();
 
-    private Rigidbody2D _playerRigidbody;
+    private LineRenderer _lineRenderer;
+
 
     void Start()
     {
-        _playerRigidbody = GetComponent<Rigidbody2D>();
-
-        _bodyPartList.Add(transform);
+        _lineRenderer = GetComponentInChildren<LineRenderer>();
+        // _bodyPartList.Add(transform);
 
         for (int i = 0; i < _bodyLenght; i++)
         {
             GameObject newPart = Instantiate(_bodyPartPrefabs, transform);
             newPart.transform.localPosition = new Vector3(-1, 0, 0) * (i + 1);
             newPart.transform.parent = null;
+
+            newPart.GetComponent<SpriteRenderer>().sortingOrder = 1000 - i;
+
             _bodyPartList.Add(newPart.transform);
             _headTrackPoints.Add(newPart.transform.position);
         }
+
+        GetComponent<PlayerSkinSetter>().SetPlayerSkin(_bodyPartList);
     }
 
     // public struct Point
@@ -77,8 +83,13 @@ public class SnakeBody : MonoBehaviour
 
     void Update()
     {
+        _lineRenderer.positionCount = _bodyPartList.Count;
+        for (int i = 0; i < _bodyPartList.Count; i++)
+        {
+            _lineRenderer.SetPosition(i, _bodyPartList[i].position);
+        }
         // add point ?
-        if (_headTrackPoints.Count > 1)
+        if (_headTrackPoints.Count > 0)
         {
             if (Vector3.Distance(_headTrackPoints[_headTrackPoints.Count - 1], transform.position) > _lineQuality)
             {
@@ -89,19 +100,19 @@ public class SnakeBody : MonoBehaviour
             }
         }
 
-        for (int i = 1; i < _bodyPartList.Count; i++)
+        for (int i = 0; i < _bodyPartList.Count; i++)
             _bodyPartList[i].position = LerpOver(i * _bodyPartOffset);
 
-        for (int i = 1; i < _bodyPartList.Count; i++)
+        for (int i = 0; i < _bodyPartList.Count; i++)
         {
-            Vector3 newUp = _bodyPartList[i - 1].transform.position - _bodyPartList[i].transform.position;
+            Vector3 newUp = _bodyPartList[i].transform.position - _bodyPartList[i].transform.position;
             _bodyPartList[i].transform.up = newUp.normalized;
         }
     }
 
     void OnDrawGizmos()
     {
-        if(!DEBUG)
+        if (!DEBUG)
             return;
         Gizmos.color = Color.green;
         foreach (var item in _headTrackPoints)
