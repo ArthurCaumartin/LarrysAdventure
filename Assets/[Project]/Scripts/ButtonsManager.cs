@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonsManager : MonoBehaviour
 {
-     // Dictionnaires pour stocker les boutons et les objets associés
+    // Dictionnaires pour stocker les boutons et les objets associés
     private Dictionary<Button, GameObject> buttonActivateMap;
     private Dictionary<Button, GameObject> buttonDeactivateMap;
     private Dictionary<Button, string> buttonSceneMap;
@@ -18,18 +18,19 @@ public class ButtonsManager : MonoBehaviour
     public List<Button> deactivateButtons;
     public List<GameObject> objectsToDeactivate;
 
-     // Listes des boutons pour changer de scène et les noms des scènes
+    // Listes des boutons pour changer de scène et les noms des scènes
     public List<Button> sceneChangeButtons;
     public List<string> scenesToLoad;
 
     // Bouton pour quitter le jeu
     public Button quitGameButton;
-    
+
     void Start()
     {
         // Initialiser les dictionnaires
         buttonActivateMap = new Dictionary<Button, GameObject>();
         buttonDeactivateMap = new Dictionary<Button, GameObject>();
+        buttonSceneMap = new Dictionary<Button, string>();
 
         // Vérifier si les listes de boutons et d'objets sont de la même longueur pour l'activation
         if (activateButtons.Count != objectsToActivate.Count)
@@ -42,6 +43,13 @@ public class ButtonsManager : MonoBehaviour
         if (deactivateButtons.Count != objectsToDeactivate.Count)
         {
             Debug.LogError("Les listes de boutons et d'objets pour la désactivation ne correspondent pas en longueur!");
+            return;
+        }
+
+        // Vérifier si les listes de boutons et de scènes sont de la même longueur pour le changement de scène
+        if (sceneChangeButtons.Count != scenesToLoad.Count)
+        {
+            Debug.LogError("Les listes de boutons et de scènes pour le changement de scène ne correspondent pas en longueur!");
             return;
         }
 
@@ -67,6 +75,24 @@ public class ButtonsManager : MonoBehaviour
 
             // Ajouter un listener pour le bouton
             button.onClick.AddListener(() => OnDeactivateButtonClick(button));
+        }
+
+        // Associer chaque bouton à une scène et ajouter un listener pour chaque bouton
+        for (int i = 0; i < sceneChangeButtons.Count; i++)
+        {
+            Button button = sceneChangeButtons[i];
+            string sceneName = scenesToLoad[i];
+
+            buttonSceneMap[button] = sceneName;
+
+            // Ajouter un listener pour le bouton
+            button.onClick.AddListener(() => OnChangeSceneButtonClick(button));
+        }
+
+        // Ajouter le listener pour le bouton de sortie
+        if (quitGameButton != null)
+        {
+            quitGameButton.onClick.AddListener(QuitGame);
         }
     }
 
