@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &16629351 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4113171914149337731, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
-  m_PrefabInstance: {fileID: 8944019141179009361}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &65315455
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +394,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103431345}
   m_CullTransparentMesh: 1
+--- !u!114 &135002957 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7853987277556930404, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
+  m_PrefabInstance: {fileID: 8944019141179009361}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d526b5bdc578e44c84a1d6305601d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &588225147
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,21 +651,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _baseSkin
+      propertyPath: _shop
       value: 
-      objectReference: {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
-    - target: {fileID: 2532534406570895987, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _skinList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: a8d979c4b00f16f499de3345c110a164, type: 2}
-    - target: {fileID: 2800870892288844584, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _coinTextList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2800870892288844584, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
-      propertyPath: _coinTextList.Array.data[0]
-      value: 
-      objectReference: {fileID: 16629351}
+      objectReference: {fileID: 135002957}
     - target: {fileID: 6154226316550087914, guid: f9a87e33b3c21b941add1e89f1768211, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

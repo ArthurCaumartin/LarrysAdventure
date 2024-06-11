@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         //CanvasManager.SetCoinText(gameData.coinQuantity);
         //CanvasManager.SetLevelUI(gameData.levelList);
 
-        _skinManager.SetSkinFromData(gameData.baseSkin, gameData.skinList);
+        _skinManager?.SetSkinFromData(gameData.baseSkin, gameData.skinList);
     }
 
     public int GetCoinQuantity()

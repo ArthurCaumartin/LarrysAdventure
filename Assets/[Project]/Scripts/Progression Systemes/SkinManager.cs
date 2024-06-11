@@ -20,7 +20,7 @@ public class SkinManager : MonoBehaviour
         _skinList = skinList;
 
         SetCurrentSkinSkin(_baseSkin);
-        _shop.LoadShop(_skinList);
+        _shop?.LoadShop(_skinList);
     }
 
     public void SetCurrentSkinSkin(ScriptableSkin skinToSet)
