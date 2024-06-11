@@ -60,7 +60,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfc2a337f1afa3448be811632a77302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseSkin: {fileID: 0}
+  _shop: {fileID: 0}
+  _baseSkin: {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
   _skinList: []
 --- !u!114 &2299594551517623182
 MonoBehaviour:
