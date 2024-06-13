@@ -597,15 +597,16 @@ MonoBehaviour:
   _animate: {fileID: 1740217616}
   _splineEventList:
   - ID: Spline Swap
-    splineIndex: 0
-    startDistance: 57.3
-    endDistance: 72.5
+    startSplineIndex: 0
+    endSplineIndex: 1
+    startDistance: 65.2
+    endDistance: 293.2
     _startEvent:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1784291718}
           m_TargetAssemblyTypeName: LevelEvent, Assembly-CSharp
-          m_MethodName: ChangeSpline
+          m_MethodName: ChangeChoiceSpline
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -617,29 +618,28 @@ MonoBehaviour:
           m_CallState: 2
     _endEvent:
       m_PersistentCalls:
-        m_Calls: []
-    debug:
-      drawDebug: 1
-      size: 2
-      color: {r: 0.12997082, g: 1, b: 0.09748411, a: 1}
-  - ID: Merge Main
-    splineIndex: 0
-    startDistance: 285.5
-    endDistance: 298.5
-    _startEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    _endEvent:
-      m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1784291718}
+          m_TargetAssemblyTypeName: LevelEvent, Assembly-CSharp
+          m_MethodName: GoBackOnMainSpline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     debug:
       drawDebug: 1
       size: 2
       color: {r: 0.12997082, g: 1, b: 0.09748411, a: 1}
   - ID: Change Speed
-    splineIndex: 1
-    startDistance: 63.8
-    endDistance: 272.3
+    startSplineIndex: 1
+    endSplineIndex: 1
+    startDistance: 82
+    endDistance: 269.9
     _startEvent:
       m_PersistentCalls:
         m_Calls:
@@ -1386,6 +1386,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1091223231273260070, guid: 546f823eb17424d459369b8a1248be66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622081831564826394, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622081831564826394, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622081831564826394, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622081831564826394, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622081831564826394, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622081831564826394, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889023058499299499, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889023058499299499, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889023058499299499, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889023058499299499, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889023058499299499, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889023058499299499, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878974597212318310, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878974597212318310, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878974597212318310, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878974597212318310, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878974597212318310, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878974597212318310, guid: 546f823eb17424d459369b8a1248be66, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

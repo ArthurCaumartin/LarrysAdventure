@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
     {
         _canvasManager = GetComponent<CanvasManager>();
 
-        _canvasManager.SetCoinText(gameData.coinQuantity);
-        _canvasManager.SetLevelButtonInMenu(gameData.levelList);
+        // _canvasManager.SetCoinText(gameData.coinQuantity);
+        // _canvasManager.SetLevelButtonInMenu(gameData.levelList);
 
         _skinManager?.SetSkinFromData(gameData.baseSkin, gameData.skinList);
     }

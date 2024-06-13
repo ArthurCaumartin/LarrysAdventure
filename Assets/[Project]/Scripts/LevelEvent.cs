@@ -20,14 +20,17 @@ public class LevelEvent : MonoBehaviour
         float distance = _animate.Distance;
         foreach (var splineEvent in _splineEventList)
         {
-            if (splineEvent.splineIndex == _animate.SplineIndex)
+            if (splineEvent.startSplineIndex == _animate.SplineIndex)
             {
                 if (splineEvent.startDistance < distance && splineEvent.startDistance + 5f > distance)
                 {
                     print(splineEvent.ID + " start");
                     splineEvent.StartEvent?.Invoke();
                 }
+            }
 
+            if (splineEvent.endSplineIndex == _animate.SplineIndex)
+            {
                 if (splineEvent.endDistance < distance && splineEvent.endDistance + 5f > distance)
                 {
                     print(splineEvent.ID + " end");
@@ -37,7 +40,8 @@ public class LevelEvent : MonoBehaviour
         }
     }
 
-    public void ChangeSpline(string indexString)
+    //! "1 0" = 1 top spline, 0 bot spline
+    public void ChangeChoiceSpline(string indexString)
     {
         Vector3 pos = _splineContainer[_animate.SplineIndex].EvaluatePosition(_animate.Distance / _animate.Lenght);
         Vector3 normal = _splineContainer.EvaluateUpVector(_animate.Distance / _animate.Lenght);
@@ -74,12 +78,19 @@ public class LevelEvent : MonoBehaviour
     {
         foreach (var item in _splineEventList)
         {
-            Spline spline = _splineContainer[item.splineIndex];
+            Spline spline = _splineContainer[item.startSplineIndex];
             float lenth = spline.GetLength();
             if (item.debug.drawDebug)
             {
                 Gizmos.color = item.debug.color;
                 Gizmos.DrawSphere(spline.EvaluatePosition(item.startDistance / lenth), item.debug.size);
+            }
+
+            spline = _splineContainer[item.endSplineIndex];
+            lenth = spline.GetLength();
+            if (item.debug.drawDebug)
+            {
+                Gizmos.color = item.debug.color;
                 Gizmos.DrawSphere(spline.EvaluatePosition(item.endDistance / lenth), item.debug.size * .6f);
             }
         }

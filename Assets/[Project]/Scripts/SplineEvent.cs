@@ -16,7 +16,9 @@ public class SplineEvent
 {
     public string ID;
 
-    public int splineIndex;
+    //TODO tow index creat code duplication :sadge:, add ind + event list to be clean
+    public int startSplineIndex;
+    public int endSplineIndex;
     [Space]
     public float startDistance;
     public float endDistance;

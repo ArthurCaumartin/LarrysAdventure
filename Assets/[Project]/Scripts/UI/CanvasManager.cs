@@ -11,7 +11,7 @@ public class CanvasManager : MonoBehaviour
 
     public void SetCoinText(int coinQuantity)
     {
-        _inGameUi?.SetCoinText(coinQuantity);
+        // _inGameUi.SetCoinText(coinQuantity);
     }
 
     public void SetLevelButtonInMenu(List<Level> levelList)

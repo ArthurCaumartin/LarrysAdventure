@@ -14,7 +14,7 @@ public class InGameUI : MonoBehaviour
 
     void Start()
     {
-        GameManager.instance.GetComponent<CanvasManager>().SetInGameUi(this);
+        GameManager.instance.GetComponent<CanvasManager>()?.SetInGameUi(this);
     }
 
     public void SetCoinText(int value)
