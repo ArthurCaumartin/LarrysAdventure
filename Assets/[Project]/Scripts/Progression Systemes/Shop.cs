@@ -15,12 +15,13 @@ public class Shop : MonoBehaviour
     [Space]
     private List<ScriptableSkin> _scriptableSkinList;
     private List<ShopButton> _shopButtonList = new List<ShopButton>();
-    private bool _isShopOpen = true;
+    private bool _isShopOpen = false;
     private SkinManager _skinManager;
 
     private void Start()
     {
         _skinManager = GameManager.instance.GetComponent<SkinManager>();
+        OpenShop(false);
     }
 
     public void OnClick(ScriptableSkin skinClic, ShopButton button)
