@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameData gameData;
     [Space]
     [SerializeField] private SkinManager _skinManager;
+    private CanvasManager _canvasManager;
     
     private void Awake()
     {
@@ -25,10 +26,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        //CanvasManager.SetCoinText(gameData.coinQuantity);
-        //CanvasManager.SetLevelUI(gameData.levelList);
+        _canvasManager = GetComponent<CanvasManager>();
 
-        _skinManager.SetSkinFromData(gameData.baseSkin, gameData.skinList);
+        // _canvasManager.SetCoinText(gameData.coinQuantity);
+        // _canvasManager.SetLevelButtonInMenu(gameData.levelList);
+
+        _skinManager?.SetSkinFromData(gameData.baseSkin, gameData.skinList);
     }
 
     public int GetCoinQuantity()
