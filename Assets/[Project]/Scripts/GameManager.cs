@@ -7,10 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] public GameData gameData;
+    [SerializeField] public GameData _gameData;
     [Space]
     [SerializeField] private SkinManager _skinManager;
-    private CanvasManager _canvasManager;
     
     private void Awake()
     {
@@ -26,22 +25,18 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        _canvasManager = GetComponent<CanvasManager>();
-
-        // _canvasManager.SetCoinText(gameData.coinQuantity);
-        // _canvasManager.SetLevelButtonInMenu(gameData.levelList);
-
-        _skinManager?.SetSkinFromData(gameData.baseSkin, gameData.skinList);
+        CanvasManager.instance?.SetCoinText(_gameData.coinQuantity);
+        _skinManager?.SetSkinFromData(_gameData.baseSkin, _gameData.skinList);
     }
 
     public int GetCoinQuantity()
     {
-        return gameData.coinQuantity;
+        return _gameData.coinQuantity;
     }
 
     public void BuyStuff(int price)
     {
-        gameData.coinQuantity -= price;
+        _gameData.coinQuantity -= price;
     }
 
     public void LoadScene(string sceneName)

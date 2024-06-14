@@ -1,28 +1,31 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CanvasManager : MonoBehaviour
 {
-    [SerializeField] private GridLayout _levelButtonLayout;
-    [SerializeField] private GameObject _levelButtonPrefab;
+    public static CanvasManager instance;
+    [SerializeField] private TextMeshProUGUI _menuCoinText;
     private InGameUI _inGameUi;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     public void SetCoinText(int coinQuantity)
     {
-        // _inGameUi.SetCoinText(coinQuantity);
+        if (_menuCoinText)
+            _menuCoinText.text = coinQuantity.ToString();
+            
+        _inGameUi?.SetCoinText(coinQuantity);
     }
 
-    public void SetLevelButtonInMenu(List<Level> levelList)
+    public void SetInGameUi(InGameUI newInGameUi)
     {
-        
-    }
-
-    public void SetInGameUi(InGameUI value)
-    {
-        _inGameUi = value;
-
+        _inGameUi = newInGameUi;
         SetCoinText(GameManager.instance.GetCoinQuantity());
     }
 }
