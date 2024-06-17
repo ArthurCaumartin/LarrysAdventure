@@ -557,6 +557,10 @@ PrefabInstance:
       propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineContainer
+      value: 
+      objectReference: {fileID: 1889643400}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
