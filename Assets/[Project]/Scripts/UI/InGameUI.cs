@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI coinUI; 
     [SerializeField] private float _colorOffset;
     [SerializeField] private float _colorSpeed;
     [SerializeField] private TextMeshProUGUI _coinText;
@@ -14,7 +15,7 @@ public class InGameUI : MonoBehaviour
 
     void Start()
     {
-        GameManager.instance.GetComponent<CanvasManager>()?.SetInGameUi(this);
+        CanvasManager.instance.SetInGameUi(this);
     }
 
     public void SetCoinText(int value)

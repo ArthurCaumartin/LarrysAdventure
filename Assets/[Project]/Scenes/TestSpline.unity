@@ -364,7 +364,7 @@ PrefabInstance:
     - target: {fileID: 6726090677751562179, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _levelEvent
       value: 
-      objectReference: {fileID: 1784291718}
+      objectReference: {fileID: 0}
     - target: {fileID: 6726090677751562179, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _splineContainer
       value: 
@@ -564,120 +564,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2219328526121016681, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1784291718}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
---- !u!114 &1740217616 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6726090677751562179, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
-  m_PrefabInstance: {fileID: 1740217615}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784291714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b48dcf5f1e926db41aa6c935babdb05b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1784291714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2219328526121016681, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
   m_PrefabInstance: {fileID: 1740217615}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1784291718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784291714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe697bb9fc6a8640991a868b2b3e792, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _splineContainer: {fileID: 1889643400}
-  _animate: {fileID: 1740217616}
-  _splineEventList:
-  - ID: Spline Swap
-    startSplineIndex: 0
-    endSplineIndex: 1
-    startDistance: 65.2
-    endDistance: 293.2
-    _startEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1784291718}
-          m_TargetAssemblyTypeName: LevelEvent, Assembly-CSharp
-          m_MethodName: ChangeChoiceSpline
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 1 0
-            m_BoolArgument: 0
-          m_CallState: 2
-    _endEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1784291718}
-          m_TargetAssemblyTypeName: LevelEvent, Assembly-CSharp
-          m_MethodName: GoBackOnMainSpline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    debug:
-      drawDebug: 1
-      size: 2
-      color: {r: 0.12997082, g: 1, b: 0.09748411, a: 1}
-  - ID: Change Speed
-    startSplineIndex: 1
-    endSplineIndex: 1
-    startDistance: 82
-    endDistance: 269.9
-    _startEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1784291718}
-          m_TargetAssemblyTypeName: LevelEvent, Assembly-CSharp
-          m_MethodName: SetSpeedMult
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 3
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    _endEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1784291718}
-          m_TargetAssemblyTypeName: LevelEvent, Assembly-CSharp
-          m_MethodName: SetSpeedMult
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    debug:
-      drawDebug: 1
-      size: 2
-      color: {r: 1, g: 0.09325994, b: 0, a: 1}
 --- !u!1 &1889643398
 GameObject:
   m_ObjectHideFlags: 0

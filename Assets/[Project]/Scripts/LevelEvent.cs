@@ -76,22 +76,25 @@ public class LevelEvent : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        if(!_splineContainer)
+            return;
+
         foreach (var item in _splineEventList)
         {
             Spline spline = _splineContainer[item.startSplineIndex];
-            float lenth = spline.GetLength();
+            float lenght = spline.GetLength();
             if (item.debug.drawDebug)
             {
                 Gizmos.color = item.debug.color;
-                Gizmos.DrawSphere(spline.EvaluatePosition(item.startDistance / lenth), item.debug.size);
+                Gizmos.DrawSphere(spline.EvaluatePosition(item.startDistance / lenght), item.debug.size);
             }
 
             spline = _splineContainer[item.endSplineIndex];
-            lenth = spline.GetLength();
+            lenght = spline.GetLength();
             if (item.debug.drawDebug)
             {
                 Gizmos.color = item.debug.color;
-                Gizmos.DrawSphere(spline.EvaluatePosition(item.endDistance / lenth), item.debug.size * .6f);
+                Gizmos.DrawSphere(spline.EvaluatePosition(item.endDistance / lenght), item.debug.size * .6f);
             }
         }
     }
