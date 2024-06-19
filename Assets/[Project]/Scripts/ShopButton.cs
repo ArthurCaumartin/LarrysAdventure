@@ -17,7 +17,7 @@ public class ShopButton : MonoBehaviour
 
     public void Inistialize(ScriptableSkin skin, Shop shop, SkinManager skinManager)
     {
-        print("Init shop buttttttttttttttttttttttttttttttttt");
+        // print("Init shop buttttttttttttttttttttttttttttttttt");
         _scriptableSkin = skin;
         _shop = shop;
         _skinManager = skinManager;
@@ -28,7 +28,7 @@ public class ShopButton : MonoBehaviour
 
     void Start()
     {
-        print("Start shop butttttttttttttttttttt");
+        // print("Start shop butttttttttttttttttttt");
         GetComponent<Button>().onClick.AddListener(OnClick);
         SetSelectState(false);
     }
@@ -42,12 +42,12 @@ public class ShopButton : MonoBehaviour
     {
         if (!_skinManager.IsSkinAlreadyBuy(_scriptableSkin.skinName))
         {
-            print("Skin : " + _scriptableSkin.skinName + " not bought !");
+            // print("Skin : " + _scriptableSkin.skinName + " not bought !");
             GetComponent<Image>().color = _notBoughtColor;
             return;
         }
 
-        print("Skin is bought");
+        // print("Skin is bought");
         GetComponent<Image>().color = value ? _SelectColor : _unSelectColor;
     }
 }

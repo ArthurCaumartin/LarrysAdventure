@@ -27,11 +27,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54eac26d22f0bc04780ed8d9f925aec7, type: 2}
   levelList:
   - ID: Level_1
-    sceneName: 
+    sceneName: LVL-01
+    levelName: Level 1
     fruitTaken: 
   - ID: Level_2
-    sceneName: 
+    sceneName: LVL-02
+    levelName: Level 2
     fruitTaken: 
   - ID: Level_3
-    sceneName: 
+    sceneName: LVL-03
+    levelName: Level 3
     fruitTaken: 
