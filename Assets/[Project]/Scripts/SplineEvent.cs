@@ -17,39 +17,23 @@ public class SplineEvent
     public string ID;
 
     //TODO tow index creat code duplication :sadge:, add ind + event list to be clean
-    public int startSplineIndex;
-    public int endSplineIndex;
+    public int splineIndex;
     [Space]
-    public float startDistance;
-    public float endDistance;
-    [SerializeField] private UnityEvent _startEvent;
-    [SerializeField] private UnityEvent _endEvent;
+    public float distance;
+    [SerializeField] private UnityEvent _event;
     [Space]
     public sEventDebug debug;
-    public UnityEvent StartEvent
+    public UnityEvent Event
     {
         get
         {
-            if (!canCallStart)
+            if (!canCallEvent)
                 return null;
 
-            canCallStart = false;
-            return _startEvent;
+            canCallEvent = false;
+            return _event;
         }
     }
 
-    public UnityEvent EndEvent
-    {
-        get
-        {
-            if (!canCallEnd)
-                return null;
-
-            canCallEnd = false;
-            return _endEvent;
-        }
-    }
-
-    private bool canCallStart = true;
-    private bool canCallEnd = true;
+    private bool canCallEvent = true;
 }

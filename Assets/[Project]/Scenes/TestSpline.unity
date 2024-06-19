@@ -633,20 +633,236 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1889643400}
     - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1].ID
+      value: Merge Back Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].ID
+      value: Accelerate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].ID
+      value: Decelerate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0].distance
+      value: 60.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1].distance
+      value: 292.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].distance
+      value: 78.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].distance
+      value: 234.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].debug.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].debug.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _splineEventList.Array.data[1].endDistance
       value: 226.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1].splineIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].splineIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].splineIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _splineEventList.Array.data[0].startDistance
       value: 68.8
       objectReference: {fileID: 0}
     - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1].debug.color.g
+      value: 0.047707573
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1].debug.color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _splineEventList.Array.data[1].startDistance
       value: 128.4
       objectReference: {fileID: 0}
     - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].debug.color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].debug.color.g
+      value: 0.09325994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].debug.color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].debug.color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].debug.color.g
+      value: 0.09325994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].debug.color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _splineEventList.Array.data[1].endSplineIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2].debug.drawDebug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3].debug.drawDebug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1784291715}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1784291715}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1784291715}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1784291715}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeChoiceSpline
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoBackOnMainSpline
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSpeedMult
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSpeedMult
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 1 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[0]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[2]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779217783550145694, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
+      propertyPath: _splineEventList.Array.data[3]._event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

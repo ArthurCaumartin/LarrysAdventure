@@ -20,21 +20,12 @@ public class LevelEvent : MonoBehaviour
         float distance = _animate.Distance;
         foreach (var splineEvent in _splineEventList)
         {
-            if (splineEvent.startSplineIndex == _animate.SplineIndex)
+            if (splineEvent.splineIndex == _animate.SplineIndex)
             {
-                if (splineEvent.startDistance < distance && splineEvent.startDistance + 5f > distance)
+                if (splineEvent.distance < distance && splineEvent.distance + 5f > distance)
                 {
                     print(splineEvent.ID + " start");
-                    splineEvent.StartEvent?.Invoke();
-                }
-            }
-
-            if (splineEvent.endSplineIndex == _animate.SplineIndex)
-            {
-                if (splineEvent.endDistance < distance && splineEvent.endDistance + 5f > distance)
-                {
-                    print(splineEvent.ID + " end");
-                    splineEvent.EndEvent?.Invoke();
+                    splineEvent.Event?.Invoke();
                 }
             }
         }
@@ -81,20 +72,12 @@ public class LevelEvent : MonoBehaviour
 
         foreach (var item in _splineEventList)
         {
-            Spline spline = _splineContainer[item.startSplineIndex];
+            Spline spline = _splineContainer[item.splineIndex];
             float lenght = spline.GetLength();
             if (item.debug.drawDebug)
             {
                 Gizmos.color = item.debug.color;
-                Gizmos.DrawSphere(spline.EvaluatePosition(item.startDistance / lenght), item.debug.size);
-            }
-
-            spline = _splineContainer[item.endSplineIndex];
-            lenght = spline.GetLength();
-            if (item.debug.drawDebug)
-            {
-                Gizmos.color = item.debug.color;
-                Gizmos.DrawSphere(spline.EvaluatePosition(item.endDistance / lenght), item.debug.size * .6f);
+                Gizmos.DrawSphere(spline.EvaluatePosition(item.distance / lenght), item.debug.size);
             }
         }
     }

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5afc50815ac7f944a8f52dce1c95ad6f, type: 3}
-  m_Name: PH_Skin_Part
+  m_Name: Skin_LinePart
   m_EditorClassIdentifier: 
-  skinName: Skin 1
+  skinName: Line Part
   coinPrice: 10
   renderData:
     eggSprite: {fileID: 21300000, guid: a567f49f7521a2a4ba05932f1bdb648c, type: 3}
     headSprite: {fileID: 21300000, guid: 268b11e5ed7ed4c40826bba950e5175b, type: 3}
     isBodyLine: 0
     bodyPart: {fileID: 21300000, guid: d764d4172e315c44299defcdb5fc7928, type: 3}
-    lineBodyMaterial: {fileID: 2800000, guid: b38371b2469d700429fd53edf37f6dc4, type: 3}
+    lineBodyTex: {fileID: 0}
