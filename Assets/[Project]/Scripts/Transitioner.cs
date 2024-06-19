@@ -35,7 +35,7 @@ public class Transitioner : MonoBehaviour
         _resetLevelImage.gameObject.SetActive(false);
     }
 
-    public void ResetLevelTransition(Action toDoInTransition = null, Action toDoAfter = null)
+    public void FastTransition(Action toDoInTransition = null, Action toDoAfter = null)
     {
         _resetLevelImage.localScale = Vector3.zero;
         _resetLevelImage.gameObject.SetActive(true);
@@ -63,7 +63,7 @@ public class Transitioner : MonoBehaviour
         });
     }
 
-    public void LarryTransition(Action toDoInTransition = null, Action toDoAfter = null)
+    public void SceneTransition(Action toDoInTransition = null, Action toDoAfter = null)
     {
         _larrysContainer.anchoredPosition = _larryContainerOriginePos;
         _larrysContainer.gameObject.SetActive(true);

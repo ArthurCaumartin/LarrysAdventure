@@ -8,6 +8,7 @@ public class Level
 {
     [HideInInspector] public string ID;
     public string sceneName;
+    public string levelName;
     // [Range(0, 3)] public int fruitTaken;
     public bool[] fruitTaken = new bool[3];
 }
