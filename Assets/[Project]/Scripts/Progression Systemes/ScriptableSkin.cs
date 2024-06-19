@@ -6,7 +6,6 @@ public class SkinRenderData
 {
     public Sprite eggSprite;
     public Sprite headSprite;
-    public bool isBodyLine;
     public Sprite bodyPart;
     public Texture2D lineBodyTex;
 

@@ -21,6 +21,7 @@ public class Shop : MonoBehaviour
     private void Start()
     {
         _skinManager = GameManager.instance.GetComponent<SkinManager>();
+        print(_skinManager);
         OpenShop(false);
     }
 
@@ -46,7 +47,8 @@ public class Shop : MonoBehaviour
         }
     }
 
-    public void LoadShop(List<ScriptableSkin> skinList)
+    //! SkinManager en paramatre pour eviter le probleme de l'execution order du start GameManager
+    public void LoadShop(List<ScriptableSkin> skinList, SkinManager skinManager)
     {
         _scriptableSkinList = skinList;
 
@@ -59,7 +61,7 @@ public class Shop : MonoBehaviour
         for (int i = 0; i < _scriptableSkinList.Count; i++)
         {
             GameObject newButton = Instantiate(_skinButtonPrefabs, _shopButtonLayout);
-            newButton.GetComponent<ShopButton>().Inistialize(_scriptableSkinList[i], this, _skinManager);
+            newButton.GetComponent<ShopButton>().Inistialize(_scriptableSkinList[i], this, skinManager);
             _shopButtonList.Add(newButton.GetComponent<ShopButton>());
         }
     }
@@ -84,6 +86,6 @@ public class Shop : MonoBehaviour
         _scrollRect.inertia = true;
 
         _shopContainer.anchoredPosition =
-        new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * 1.05f, 0);
+        new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * .85f, 0);
     }
 }

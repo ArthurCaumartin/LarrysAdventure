@@ -33,9 +33,10 @@ public class SnakeBody : MonoBehaviour
 
             _bodyPartList.Add(newPart.transform);
             _headTrackPoints.Add(newPart.transform.position);
-        }
 
-        GetComponent<PlayerSkinSetter>().SetPlayerSkin(_bodyPartList);
+        }
+        
+        GetComponent<PlayerSkinSetter>().Initialize(_bodyPartList);
     }
 
     // public struct Point
@@ -108,6 +109,11 @@ public class SnakeBody : MonoBehaviour
             Vector3 newUp = _bodyPartList[i].transform.position - _bodyPartList[i].transform.position;
             _bodyPartList[i].transform.up = newUp.normalized;
         }
+    }
+
+    public List<Transform> GetBodyPart()
+    {
+        return _bodyPartList;
     }
 
     void OnDrawGizmos()

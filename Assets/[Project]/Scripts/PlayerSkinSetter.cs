@@ -9,29 +9,30 @@ public class PlayerSkinSetter : MonoBehaviour
     [SerializeField] private SpriteRenderer _headRenderer;
     [SerializeField] private LineRenderer _lineRenderer;
 
-    public Texture2D bodyTexture;
+    private List<SpriteRenderer> _bodyPartRendererList = new List<SpriteRenderer>();
 
-    public void SetPlayerSkin(List<Transform> partList)
+    public void Initialize(List<Transform> bodyPartList)
     {
-        ScriptableSkin skin = SkinManager.CurrentSkin;
+        for (int i = 0; i < bodyPartList.Count; i++)
+        {
+            _bodyPartRendererList.Add(bodyPartList[i].GetComponent<SpriteRenderer>());
+        }
+
+        GameManager.instance.GetComponent<SkinManager>().SetSkinSetter(this);
+    }
+
+    public void SetPlayerSkin(ScriptableSkin skin)
+    {
         if (skin == null)
             return;
 
         _headRenderer.sprite = skin.renderData.headSprite;
-        _lineRenderer.enabled = skin.renderData.isBodyLine;
-        if (skin.renderData.isBodyLine)
-        {
+        
+        _lineRenderer.enabled = skin.renderData.lineBodyTex;
+        if (_lineRenderer.enabled)
             _lineRenderer.sharedMaterial.SetTexture("_MainTex", skin.renderData.lineBodyTex);
-            foreach (var item in partList)
-                item.GetComponent<SpriteRenderer>().enabled = false;
-            return;
-        }
 
-        foreach (var item in partList)
-        {
-            foreach (var p in partList)
-                p.GetComponent<SpriteRenderer>().enabled = true;
+        foreach (var item in _bodyPartRendererList)
             item.GetComponent<SpriteRenderer>().sprite = skin.renderData.bodyPart;
-        }
     }
 }

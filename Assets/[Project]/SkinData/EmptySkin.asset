@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afc50815ac7f944a8f52dce1c95ad6f, type: 3}
+  m_Name: EmptySkin
+  m_EditorClassIdentifier: 
+  skinName: 
+  coinPrice: 10
+  renderData:
+    eggSprite: {fileID: 0}
+    headSprite: {fileID: 21300000, guid: 268b11e5ed7ed4c40826bba950e5175b, type: 3}
+    bodyPart: {fileID: 0}
+    lineBodyTex: {fileID: 2800000, guid: b38371b2469d700429fd53edf37f6dc4, type: 3}

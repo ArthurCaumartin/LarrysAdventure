@@ -17,6 +17,7 @@ public class ShopButton : MonoBehaviour
 
     public void Inistialize(ScriptableSkin skin, Shop shop, SkinManager skinManager)
     {
+        print("Init shop buttttttttttttttttttttttttttttttttt");
         _scriptableSkin = skin;
         _shop = shop;
         _skinManager = skinManager;
@@ -27,6 +28,7 @@ public class ShopButton : MonoBehaviour
 
     void Start()
     {
+        print("Start shop butttttttttttttttttttt");
         GetComponent<Button>().onClick.AddListener(OnClick);
         SetSelectState(false);
     }
