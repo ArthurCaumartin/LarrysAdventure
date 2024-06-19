@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     {
         //TODO extract to SceneLoader class
         Time.timeScale = 0;
-        Transitioner.instance.LarryTransition(() =>
+        Transitioner.instance.SceneTransition(() =>
         {
             SceneManager.LoadScene(sceneName);
         }, () => Time.timeScale = 1);
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     {
         //TODO extract to SceneLoader class
         Time.timeScale = 0;
-        Transitioner.instance.ResetLevelTransition(
+        Transitioner.instance.FastTransition(
             () =>
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
