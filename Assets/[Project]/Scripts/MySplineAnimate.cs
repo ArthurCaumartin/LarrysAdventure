@@ -1,10 +1,8 @@
-using System.Collections.Generic;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 
-public class AnimateAtHome : MonoBehaviour
+public class MySplineAnimate : MonoBehaviour
 {
     [SerializeField] private LevelEvent _levelEvent;
     [SerializeField] private float _speed;

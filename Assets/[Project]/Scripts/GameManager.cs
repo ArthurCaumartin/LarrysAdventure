@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -10,15 +7,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameData _gameData;
     [Space]
     [SerializeField] private SkinManager _skinManager;
-    
+
     private void Awake()
     {
-        if(instance)
+        if (instance)
         {
             Destroy(gameObject);
             return;
         }
-        
+
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -53,9 +50,12 @@ public class GameManager : MonoBehaviour
     {
         //TODO extract to SceneLoader class
         Time.timeScale = 0;
-        Transitioner.instance.ResetLevelTransition(() =>
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }, () => Time.timeScale = 1);
+        Transitioner.instance.ResetLevelTransition(
+            () =>
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            },
+            () => Time.timeScale = 1
+        );
     }
 }

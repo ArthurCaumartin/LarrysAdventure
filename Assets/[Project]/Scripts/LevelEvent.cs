@@ -8,7 +8,7 @@ using UnityEngine.Splines;
 public class LevelEvent : MonoBehaviour
 {
     [SerializeField] private SplineContainer _splineContainer;
-    [SerializeField] private AnimateAtHome _animate;
+    [SerializeField] private MySplineAnimate _animate;
     [SerializeField] private List<SplineEvent> _splineEventList;
 
     private float _speedMult = 1;

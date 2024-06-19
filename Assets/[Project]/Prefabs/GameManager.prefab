@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed5b07448e37d714d82bb1c656f3edd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameData: {fileID: 11400000, guid: d02d11d5056832243a2529fc0a8cd7a3, type: 2}
+  _gameData: {fileID: 11400000, guid: d02d11d5056832243a2529fc0a8cd7a3, type: 2}
   _skinManager: {fileID: 2532534406570895987}
 --- !u!114 &2532534406570895987
 MonoBehaviour:
