@@ -50,6 +50,48 @@ MonoBehaviour:
   _shopContainer: {fileID: 6945694329360923542}
   _shopBackground: {fileID: 770224144649139212}
   _shopButtonLayout: {fileID: 2650522953309263607}
+  _anmationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.0017227196
+      outSlope: 0.0017227196
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.9991311
+    - serializedVersion: 3
+      time: 0.16508502
+      value: -0.017266754
+      inSlope: 0.5404681
+      outSlope: 0.5404681
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8451851
+      value: 1.0173304
+      inSlope: 0.5337394
+      outSlope: 0.5337394
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.0034392993
+      outSlope: -0.0034392993
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &677747578842980695
 GameObject:
   m_ObjectHideFlags: 0
