@@ -357,22 +357,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Core
       objectReference: {fileID: 0}
-    - target: {fileID: 4854544169725562522, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
-      propertyPath: _bodyLenght
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4854544169725562522, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
-      propertyPath: _lineQuality
-      value: 3.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 4854544169725562522, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
-      propertyPath: _bodyPartOffset
-      value: 0.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 6438908965810296699, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 268b11e5ed7ed4c40826bba950e5175b, type: 3}
     - target: {fileID: 6726090677751562179, guid: 532423ede35664b49bd9cc906d69f754, type: 3}
       propertyPath: _speed
       value: 17.64

@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(transform.parent == null)
         {
-            print("NO PARENT | PLAYER NEED PARENT");
+            print("NO PARENT | PLAYER NEED PARENT le pauvre :'(");
             return;
         }
 

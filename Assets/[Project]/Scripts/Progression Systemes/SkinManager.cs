@@ -8,6 +8,7 @@ public class SkinManager : MonoBehaviour
     [SerializeField] private List<ScriptableSkin> _skinList;
     private PlayerPrefRecorder _playerPrefRecorder;
     public static ScriptableSkin CurrentSkin;
+    private PlayerSkinSetter _playerSkinSetter;
 
     void Start()
     {
@@ -29,6 +30,13 @@ public class SkinManager : MonoBehaviour
             return;
 
         CurrentSkin = skinToSet;
+        _playerSkinSetter?.SetPlayerSkin(CurrentSkin);
+    }
+
+    public void SetSkinSetter(PlayerSkinSetter skinSetter)
+    {
+        _playerSkinSetter = skinSetter;
+        _playerSkinSetter.SetPlayerSkin(CurrentSkin);
     }
 
     public List<ScriptableSkin> GetSkinList()

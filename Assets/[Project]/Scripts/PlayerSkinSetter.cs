@@ -17,31 +17,22 @@ public class PlayerSkinSetter : MonoBehaviour
         {
             _bodyPartRendererList.Add(bodyPartList[i].GetComponent<SpriteRenderer>());
         }
+
+        GameManager.instance.GetComponent<SkinManager>().SetSkinSetter(this);
     }
 
-    public void SetPlayerSkin()
+    public void SetPlayerSkin(ScriptableSkin skin)
     {
-        ScriptableSkin skin = SkinManager.CurrentSkin;
         if (skin == null)
             return;
 
         _headRenderer.sprite = skin.renderData.headSprite;
         
-        _lineRenderer.enabled = skin.renderData.isBodyLine;
-
-        if (skin.renderData.isBodyLine)
-        {
+        _lineRenderer.enabled = skin.renderData.lineBodyTex;
+        if (_lineRenderer.enabled)
             _lineRenderer.sharedMaterial.SetTexture("_MainTex", skin.renderData.lineBodyTex);
-            foreach (var item in _bodyPartRendererList)
-                item.GetComponent<SpriteRenderer>().enabled = false;
-            return;
-        }
 
         foreach (var item in _bodyPartRendererList)
-        {
-            foreach (var p in _bodyPartRendererList)
-                p.GetComponent<SpriteRenderer>().enabled = true;
             item.GetComponent<SpriteRenderer>().sprite = skin.renderData.bodyPart;
-        }
     }
 }

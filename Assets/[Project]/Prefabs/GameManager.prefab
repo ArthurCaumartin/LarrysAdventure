@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shop: {fileID: 0}
-  _baseSkin: {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
+  _baseSkin: {fileID: 11400000, guid: cab10a0f528a8474f866876c56fa3631, type: 2}
   _skinList: []
 --- !u!114 &2299594551517623182
 MonoBehaviour:
