@@ -86,6 +86,6 @@ public class Shop : MonoBehaviour
         _scrollRect.inertia = true;
 
         _shopContainer.anchoredPosition =
-        new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * 1.05f, 0);
+        new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * .85f, 0);
     }
 }
