@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private RectTransform _shopBackground;
     [SerializeField] private RectTransform _shopButtonLayout;
     [Space]
+    [SerializeField] private AnimationCurve _anmationCurve;
     private List<ScriptableSkin> _scriptableSkinList;
     private List<ShopButton> _shopButtonList = new List<ShopButton>();
     private bool _isShopOpen = false;
@@ -85,7 +87,7 @@ public class Shop : MonoBehaviour
         _shopButtonLayout.anchoredPosition = Vector2.zero;
         _scrollRect.inertia = true;
 
-        _shopContainer.anchoredPosition =
-        new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * .85f, 0);
+        _shopContainer.DOAnchorPos(new Vector2(_isShopOpen ? 0 : -_shopBackground.rect.width * .85f, 0), .5f)
+        .SetEase(_anmationCurve);
     }
 }
