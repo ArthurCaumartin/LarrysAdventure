@@ -21,6 +21,9 @@ public class SkinManager : MonoBehaviour
         _skinList = skinList;
 
         SetCurrentSkinSkin(_baseSkin);
+
+        if(!_shop)
+            _shop = FindObjectOfType<Shop>();
         _shop?.LoadShop(_skinList, this);
     }
 
