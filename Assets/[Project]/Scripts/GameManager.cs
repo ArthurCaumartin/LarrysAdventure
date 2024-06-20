@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameData _gameData;
     [Space]
     [SerializeField] private SkinManager _skinManager;
+    private PlayerPrefRecorder _playerRecorder;
 
     private void Awake()
     {
@@ -20,8 +21,11 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
+    public void Start()
     {
+        _playerRecorder = GetComponent<PlayerPrefRecorder>();
+        _gameData.coinQuantity = _playerRecorder.GetData("coin");
+
         CanvasManager.instance?.SetCoinText(_gameData.coinQuantity);
         _skinManager?.SetSkinFromData(_gameData.baseSkin, _gameData.skinList);
     }
@@ -31,9 +35,18 @@ public class GameManager : MonoBehaviour
         return _gameData.coinQuantity;
     }
 
+    public void AddCoin(int value)
+    {
+        _gameData.coinQuantity += value;
+        CanvasManager.instance.SetCoinText(_gameData.coinQuantity);
+        _playerRecorder.SaveData("coin", _gameData.coinQuantity);
+    }
+
     public void BuyStuff(int price)
     {
         _gameData.coinQuantity -= price;
+        CanvasManager.instance.SetCoinText(_gameData.coinQuantity);
+        _playerRecorder.SaveData("coin", _gameData.coinQuantity);
     }
 
     public void LoadScene(string sceneName)

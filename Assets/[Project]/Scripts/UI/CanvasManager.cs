@@ -12,14 +12,25 @@ public class CanvasManager : MonoBehaviour
 
     void Awake()
     {
+        if (instance)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         instance = this;
+    }
+
+    void Start()
+    {
+        GameManager.instance.Start();
     }
 
     public void SetCoinText(int coinQuantity)
     {
         if (_menuCoinText)
             _menuCoinText.text = coinQuantity.ToString();
-            
+
         _inGameUi?.SetCoinText(coinQuantity);
     }
 
