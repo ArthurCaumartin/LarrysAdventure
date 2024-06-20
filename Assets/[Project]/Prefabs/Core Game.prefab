@@ -206,6 +206,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4780088453562311306, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 562.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780088453562311306, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6007911901616045034, guid: 33970b3adef76d14c81c340c58a6fdb2, type: 3}
       propertyPath: m_Name
       value: Transitioner

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        transform.parent = null;
         if (instance)
         {
             Destroy(gameObject);
