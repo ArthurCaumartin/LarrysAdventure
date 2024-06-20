@@ -20,6 +20,7 @@ public class Transitioner : MonoBehaviour
 
     private void Awake()
     {
+        transform.parent = null;
         if(instance)
         {
             Destroy(gameObject);
