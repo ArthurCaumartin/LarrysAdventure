@@ -6,13 +6,14 @@ public class Transitioner : MonoBehaviour
 {
     public static Transitioner instance;
 
-    [Header("Larry's Transition :")]
+    [Header("Scene Transition :")]
     [SerializeField] private float _larryTransitionDuration = 1f;
     [SerializeField] private RectTransform _larrysContainer;
 
-    [Header("Reset Level Transition :")]
+    [Header("Fast Transition :")]
 
     [SerializeField] private float _resetAnimationDuration = 1f;
+    [SerializeField] private float _rotateSpeed = 25f;
     [SerializeField] private RectTransform _resetLevelImage;
 
 
@@ -21,12 +22,12 @@ public class Transitioner : MonoBehaviour
     private void Awake()
     {
         transform.parent = null;
-        if(instance)
+        if (instance)
         {
             Destroy(gameObject);
             return;
         }
-        
+
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -45,15 +46,18 @@ public class Transitioner : MonoBehaviour
         DOTween.To((time) =>
         {
             _resetLevelImage.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, time);
+            _resetLevelImage.transform.Rotate(new Vector3(0, 0, _rotateSpeed));
         }, 0, 1, _resetAnimationDuration / 2)
         .SetUpdate(true)
         .SetEase(Ease.Linear)
         .OnComplete(() =>
         {
+            _resetLevelImage.transform.eulerAngles = Vector3.zero;
             toDoInTransition?.Invoke();
             DOTween.To((time) =>
             {
                 _resetLevelImage.localScale = Vector3.Lerp(Vector3.one, Vector3.zero, time);
+                _resetLevelImage.transform.Rotate(new Vector3(0, 0, _rotateSpeed));
             }, 0, 1, _resetAnimationDuration / 2)
             .SetDelay(.5f)
             .SetUpdate(true)
