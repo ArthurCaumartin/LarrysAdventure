@@ -8,6 +8,9 @@ using UnityEngine.UI;
 public class ShopButton : MonoBehaviour
 {
     [SerializeField] private Image _eggImage;
+    [SerializeField] private TextMeshProUGUI _skinNameText;
+    [SerializeField] private TextMeshProUGUI _priceText;
+    [Space]
     [SerializeField] private Sprite _notBoughtSprite;
     [SerializeField] private Sprite _unSelectSprite;
     [SerializeField] private Sprite _SelectSprite;
@@ -23,7 +26,10 @@ public class ShopButton : MonoBehaviour
         _skinManager = skinManager;
 
         _eggImage.sprite = skin.renderData.eggSprite;
-        GetComponentInChildren<TextMeshProUGUI>().text = skin.skinName;
+        _skinNameText.text = skin.skinName;
+
+        _priceText.gameObject.SetActive(true);
+        _priceText.text = skin.coinPrice.ToString();
     }
 
     void Start()
@@ -40,6 +46,7 @@ public class ShopButton : MonoBehaviour
 
     public void SetSelectState(bool value)
     {
+
         if (!_skinManager.IsSkinAlreadyBuy(_scriptableSkin.skinName))
         {
             // print("Skin : " + _scriptableSkin.skinName + " not bought !");
@@ -48,6 +55,7 @@ public class ShopButton : MonoBehaviour
         }
 
         // print("Skin is bought");
+        _priceText.gameObject.SetActive(false);
         GetComponent<Image>().sprite = value ? _SelectSprite : _unSelectSprite;
     }
 }
