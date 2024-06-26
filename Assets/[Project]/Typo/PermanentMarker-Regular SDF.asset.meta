@@ -1,5 +1,8 @@
 fileFormatVersion: 2
 guid: b8b69b0dd5b065049a7d49eed9a282d2
+labels:
+- Atlas
+- Font
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
