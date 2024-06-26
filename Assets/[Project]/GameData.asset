@@ -12,29 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56ef31c8bdf57a44871aa5b6717b0ee, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  coinQuantity: 334
-  baseSkin: {fileID: 11400000, guid: cab10a0f528a8474f866876c56fa3631, type: 2}
+  coinQuantity: 324
+  baseSkin: {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
   skinList:
   - {fileID: 11400000, guid: f31151155d7768641a9565977185eaa8, type: 2}
   - {fileID: 11400000, guid: a8d979c4b00f16f499de3345c110a164, type: 2}
   - {fileID: 11400000, guid: 7607207dae1c3284294aa7e0c703dec1, type: 2}
   - {fileID: 11400000, guid: 214e262387b72884db97cf03d473804a, type: 2}
   - {fileID: 11400000, guid: 471129ae02cbb7c419cdb486e4722a9e, type: 2}
-  - {fileID: 11400000, guid: c3caaf0b8f0ae1c469e5eb6f127f6641, type: 2}
-  - {fileID: 11400000, guid: b353bd99697664b4190d4b812fbdde4d, type: 2}
-  - {fileID: 11400000, guid: 1d85c8c1229214646b96c0a9b6dc3d9c, type: 2}
-  - {fileID: 11400000, guid: cc4cd330a43aba44f8b8e98e9d88ec8c, type: 2}
-  - {fileID: 11400000, guid: 54eac26d22f0bc04780ed8d9f925aec7, type: 2}
   levelList:
   - ID: Level_1
     sceneName: LVL-01
     levelName: Level 1
-    fruitTaken: 
+    fruitTaken: 010100
     buttonSprite: {fileID: 21300000, guid: fdb459dff8c3f8c429486e77ad7d9230, type: 3}
   - ID: Level_2
     sceneName: LVL-02
     levelName: Level 2
-    fruitTaken: 
+    fruitTaken: 0100
     buttonSprite: {fileID: 21300000, guid: 6f000cadb95b84d4e9e2c9f2d7ecd9b3, type: 3}
   - ID: Level_3
     sceneName: LVL-03
