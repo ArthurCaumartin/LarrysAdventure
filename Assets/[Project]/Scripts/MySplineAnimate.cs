@@ -5,6 +5,7 @@ using UnityEngine.Splines;
 public class MySplineAnimate : MonoBehaviour
 {
     [SerializeField] private LevelEvent _levelEvent;
+    [SerializeField] private bool _isLooping = false;
     [SerializeField] private float _speed;
     [SerializeField] private SplineContainer _splineContainer;
     [SerializeField] private int _splineIndex;
@@ -25,7 +26,7 @@ public class MySplineAnimate : MonoBehaviour
 
         _distance += Time.deltaTime * _speed * _levelEvent.SpeedMult;
         transform.position = _currentSpline.EvaluatePosition(_distance / _currentSplineLenght);
-        if (_distance >= _currentSpline.GetLength())
+        if (_distance >= _currentSpline.GetLength() && _isLooping)
             _distance = 0;
     }
 
