@@ -1,1 +1,1 @@
-{"Continuous":false,"FillRate":0.25,"Tabs":1,"Slots":[]}
+{"Continuous":true,"FillRate":0.1289999932050705,"Tabs":1,"Slots":[{"tab":1,"parent":"","path":"Assets/[Project]/Prefabs/Visual/Leef.prefab","active":true,"slider":1.0,"randomPositionToggle":false,"randomRotationToggle":true,"randomRotationXYZ":[false,false,true],"randomScaleToggle":true,"randomScaleMin":2.0,"randomScaleMax":3.0}]}
