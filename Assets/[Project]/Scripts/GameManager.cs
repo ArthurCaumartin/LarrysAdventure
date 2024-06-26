@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         _playerRecorder = GetComponent<PlayerPrefRecorder>();
-        _gameData.coinQuantity = _playerRecorder.GetData("coin");
+        // _gameData.coinQuantity = _playerRecorder.GetData("coin");
 
         CanvasManager.instance?.SetCoinText(_gameData.coinQuantity);
         _skinManager?.SetSkinFromData(_gameData.baseSkin, _gameData.skinList);

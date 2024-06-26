@@ -9,6 +9,7 @@ public class Shop : MonoBehaviour
 
     [SerializeField] private GameObject _skinButtonPrefabs;
     [Space]
+    [SerializeField] private GameObject _closeShopPanel;
     [SerializeField] private ScrollRect _scrollRect;
     [SerializeField] private RectTransform _shopContainer;
     [SerializeField] private RectTransform _shopBackground;
@@ -82,6 +83,8 @@ public class Shop : MonoBehaviour
 
     private void SetShopPosition(bool shopOpenState)
     {
+        _closeShopPanel.SetActive(shopOpenState);
+
         //TODO dotween anim
         _scrollRect.inertia = false;
         _shopButtonLayout.anchoredPosition = Vector2.zero;
