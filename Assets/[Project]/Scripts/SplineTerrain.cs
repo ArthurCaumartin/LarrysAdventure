@@ -12,10 +12,6 @@ public class SplineTerrain : MonoBehaviour
 
     private LineRenderer _line;
 
-    void Start()
-    {
-    }
-
     void OnValidate()
     {
         YAAA();
@@ -23,7 +19,13 @@ public class SplineTerrain : MonoBehaviour
 
     private void YAAA()
     {
-        if(!_levelSpline || _pointCount < 0)
+        if(!_levelSpline)
+        {
+            print(gameObject.name + " fo mettre la level spline dans le script");
+            return;
+        }
+
+        if(_pointCount < 0)
             return;
         
         if (!_line)
