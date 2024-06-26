@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour
         {
             GameObject newButton = Instantiate(_menuButtonPrefab, _levelButtonParent);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = _levelList[i].levelName;
-
+            newButton.GetComponent<Image>().sprite = levelList[i].buttonSprite;             //ajouté par tim (arthur D et C)
             newButton.GetComponent<SceneLoader>().sceneToLoad = _levelList[i].sceneName;
         }
     }

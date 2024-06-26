@@ -11,6 +11,7 @@ public class Level
     public string levelName;
     // [Range(0, 3)] public int fruitTaken;
     public bool[] fruitTaken = new bool[3];
+    public Sprite buttonSprite;
 }
 
 [CreateAssetMenu(menuName = "LarrysAdventure/GameData ✿ڿڰۣ——")]
