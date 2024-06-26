@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class ShopButton : MonoBehaviour
 {
     [SerializeField] private Image _eggImage;
-    [SerializeField] private Color _notBoughtColor;
-    [SerializeField] private Color _unSelectColor;
-    [SerializeField] private Color _SelectColor;
+    [SerializeField] private Sprite _notBoughtSprite;
+    [SerializeField] private Sprite _unSelectSprite;
+    [SerializeField] private Sprite _SelectSprite;
     private ScriptableSkin _scriptableSkin;
     private Shop _shop;
     private SkinManager _skinManager;
@@ -43,11 +43,11 @@ public class ShopButton : MonoBehaviour
         if (!_skinManager.IsSkinAlreadyBuy(_scriptableSkin.skinName))
         {
             // print("Skin : " + _scriptableSkin.skinName + " not bought !");
-            GetComponent<Image>().color = _notBoughtColor;
+            GetComponent<Image>().sprite = _notBoughtSprite;
             return;
         }
 
         // print("Skin is bought");
-        GetComponent<Image>().color = value ? _SelectColor : _unSelectColor;
+        GetComponent<Image>().sprite = value ? _SelectSprite : _unSelectSprite;
     }
 }

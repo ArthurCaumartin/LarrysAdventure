@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eggImage: {fileID: 6224039194379383759}
-  _notBoughtColor: {r: 1, g: 0.9929907, b: 0.25, a: 1}
-  _unSelectColor: {r: 0.58770597, g: 0.6509434, b: 0.5741812, a: 1}
-  _SelectColor: {r: 0.21727121, g: 0.9056604, b: 0.15806337, a: 1}
+  _notBoughtSprite: {fileID: 21300000, guid: 2f62013e1dc4cc540a242a88fd33a9b5, type: 3}
+  _unSelectSprite: {fileID: 21300000, guid: 11001a9b7e99b24429ed5626da97e29e, type: 3}
+  _SelectSprite: {fileID: 21300000, guid: 268b11e5ed7ed4c40826bba950e5175b, type: 3}
 --- !u!1 &2241267388083892338
 GameObject:
   m_ObjectHideFlags: 0

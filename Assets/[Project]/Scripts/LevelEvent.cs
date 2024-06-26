@@ -65,7 +65,7 @@ public class LevelEvent : MonoBehaviour
         }, 0, 1, 1);
     }
 
-    void OnDrawGizmos()
+     void OnDrawGizmos()
     {
         if(!_splineContainer)
             return;
