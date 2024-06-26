@@ -14,12 +14,11 @@ public class SplineTerrain : MonoBehaviour
 
     void Start()
     {
-        YAAA();
     }
 
     void OnValidate()
     {
-        Start();
+        YAAA();
     }
 
     private void YAAA()
