@@ -35,14 +35,23 @@ public class GameManager : MonoBehaviour
 
             for (int i = 0; i < _gameData.levelList.Count; i++)
             {
-                for (int y = 0; i < _gameData.levelList[i].fruitTaken.Length; y++)
-                    _gameData.levelList[i].fruitTaken[y] = _playerRecorder.GetDataBool(_gameData.levelList[i].levelName + y);
+                for (int y = 0; y < _gameData.levelList[i].fruitTaken.Length; y++)
+                {
+                    print("Data to Get : " + _gameData.levelList[i].sceneName + y);
+                    _gameData.levelList[i].fruitTaken[y] = _playerRecorder.GetDataBool(_gameData.levelList[i].sceneName + y);
+                }
             }
         }
 
         MainMenu.instance?.BakeLevelButton(_gameData.levelList);
         CanvasManager.instance?.SetCoinText(_gameData.coinQuantity);
         _skinManager?.SetSkinFromData(_gameData.baseSkin, _gameData.skinList);
+    }
+
+    public void FruitTaken(string sceneName, int index)
+    {
+        print("Record : " + sceneName + index);
+        _playerRecorder.SaveData(sceneName + index, 1);
     }
 
     public int GetCoinQuantity()
