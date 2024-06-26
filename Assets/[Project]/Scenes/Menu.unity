@@ -568,6 +568,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3650304769287400677, guid: 2b6daaedbe988044099f0a242c1ef153, type: 3}
+      propertyPath: m_CellSize.x
+      value: 222
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650304769287400677, guid: 2b6daaedbe988044099f0a242c1ef153, type: 3}
+      propertyPath: m_CellSize.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 5409370303619019463, guid: 2b6daaedbe988044099f0a242c1ef153, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
