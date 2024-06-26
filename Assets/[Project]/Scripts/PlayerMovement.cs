@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float _speed = 0.1f;
+    [SerializeField] private float _movementTime = 0.1f;
     private bool _isScreenClicked = false;
     private Vector2 _inputScreenPos;
     private Camera _mainCam;
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             moveTarget = Vector2.SmoothDamp(transform.localPosition
                                           , transform.parent.InverseTransformPoint(_mainCam.ScreenToWorldPoint(_inputScreenPos))
-                                          , ref _dampVelocity, _speed, Mathf.Infinity, Time.deltaTime);
+                                          , ref _dampVelocity, _movementTime, Mathf.Infinity, Time.deltaTime);
         }
         else
             moveTarget = transform.localPosition;

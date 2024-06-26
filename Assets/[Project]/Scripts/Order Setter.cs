@@ -11,7 +11,7 @@ public class OrderSetter : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = (int)(i + _startValue * Mathf.Sign(_startValue));
+            transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = (int)(i + _startValue);
         }
     }
 }
