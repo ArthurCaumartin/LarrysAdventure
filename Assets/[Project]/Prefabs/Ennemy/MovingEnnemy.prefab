@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 585439655190127676}
   - component: {fileID: 597879578605550353}
   - component: {fileID: 2951843052503214112}
+  - component: {fileID: 4069725668214469436}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -49,7 +50,7 @@ MonoBehaviour:
   _pointA: {fileID: 4781542120925392528}
   _pointB: {fileID: 7009140189739459211}
   _speed: 5
-  _rotateSpeed: 0
+  _rotateSpeed: 130
 --- !u!60 &2951843052503214112
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -105,6 +106,18 @@ PolygonCollider2D:
       - {x: -0.015766144, y: 0.33090436}
       - {x: -0.075650215, y: 0.70078677}
   m_UseDelaunayMesh: 0
+--- !u!114 &4069725668214469436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797301815615872237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ae6a97449ccfd49939d9e87b14e718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680388316743955070
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +242,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9193085441044174830}
-  - component: {fileID: 8793806834850890015}
   m_Layer: 0
   m_Name: MovingEnnemy
   m_TagString: Enemy
@@ -255,18 +267,6 @@ Transform:
   - {fileID: 7009140189739459211}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8793806834850890015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3351658996623675396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22ae6a97449ccfd49939d9e87b14e718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4514851314124849500
 GameObject:
   m_ObjectHideFlags: 0
