@@ -26,6 +26,7 @@ public class Transitioner : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        
         instance = this;
         DontDestroyOnLoad(gameObject);
     }

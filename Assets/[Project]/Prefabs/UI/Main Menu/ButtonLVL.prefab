@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 2243355299919334215}
   - component: {fileID: 4752846885806937702}
   - component: {fileID: 8626322583206497209}
-  - component: {fileID: 8665715466685000659}
+  - component: {fileID: 6918140075352221475}
   m_Layer: 5
   m_Name: ButtonLVL
   m_TagString: Untagged
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8665715466685000659}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8665715466685000659
+--- !u!114 &6918140075352221475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,10 +179,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8443531318130563934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b217b592ba0cdf94c81cbe98501d0387, type: 3}
+  m_Script: {fileID: 11500000, guid: c83559d62aa4765459e1a0122937275f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  _sceneToLoad: 
+  _fruitImagePrefab: {fileID: 7292564821624316597, guid: d14249f16112d7e4ca9a0fbd5fdcf099, type: 3}
+  _fruitImageList: []
 --- !u!1 &9170996932088997794
 GameObject:
   m_ObjectHideFlags: 0

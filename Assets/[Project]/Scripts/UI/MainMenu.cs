@@ -1,13 +1,12 @@
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
 public class MainMenu : MonoBehaviour
 {
+    public static MainMenu instance;
     [SerializeField] private float _transitionAnimationTime;
     [SerializeField] AnimationCurve _animationCurve;
     [Space]
@@ -21,12 +20,15 @@ public class MainMenu : MonoBehaviour
     private MainMenuElement _currentElement;
     private List<Level> _levelList;
 
+    void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         _titleElement.Show(_transitionAnimationTime, _animationCurve);
         _currentElement = _titleElement;
-
-        BakeLevelButton(GameManager.instance._gameData.levelList);
     }
 
     public void ShowElement(MainMenuElement elementToShow)
@@ -44,8 +46,8 @@ public class MainMenu : MonoBehaviour
         {
             GameObject newButton = Instantiate(_menuButtonPrefab, _levelButtonParent);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = _levelList[i].levelName;
-            newButton.GetComponent<Image>().sprite = levelList[i].buttonSprite;             //ajouté par tim (arthur D et C)
-            newButton.GetComponent<SceneLoader>().sceneToLoad = _levelList[i].sceneName;
+            newButton.GetComponent<Image>().sprite = levelList[i].buttonSprite;             //ajoutï¿½ par tim (arthur D et C)
+            newButton.GetComponent<ButtonLevel>().Initialise(levelList[i].sceneName, levelList[i].fruitTaken);
         }
     }
 }

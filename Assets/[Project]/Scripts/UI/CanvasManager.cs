@@ -23,7 +23,7 @@ public class CanvasManager : MonoBehaviour
 
     void Start()
     {
-        GameManager.instance.Start();
+        // GameManager.instance.Start();
     }
 
     public void SetCoinText(int coinQuantity)

@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField] private bool _takeSaveData = false;
     [SerializeField] public GameData _gameData;
     [Space]
     [SerializeField] private SkinManager _skinManager;
@@ -25,8 +27,20 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         _playerRecorder = GetComponent<PlayerPrefRecorder>();
-        // _gameData.coinQuantity = _playerRecorder.GetData("coin");
 
+
+        if (_takeSaveData)
+        {
+            // _gameData.coinQuantity = _playerRecorder.GetData("coin");
+
+            for (int i = 0; i < _gameData.levelList.Count; i++)
+            {
+                for (int y = 0; i < _gameData.levelList[i].fruitTaken.Length; y++)
+                    _gameData.levelList[i].fruitTaken[y] = _playerRecorder.GetDataBool(_gameData.levelList[i].levelName + y);
+            }
+        }
+
+        MainMenu.instance?.BakeLevelButton(_gameData.levelList);
         CanvasManager.instance?.SetCoinText(_gameData.coinQuantity);
         _skinManager?.SetSkinFromData(_gameData.baseSkin, _gameData.skinList);
     }

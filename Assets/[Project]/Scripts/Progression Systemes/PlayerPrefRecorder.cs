@@ -14,6 +14,11 @@ public class PlayerPrefRecorder : MonoBehaviour
         return PlayerPrefs.GetInt(name);
     }
 
+    public bool GetDataBool(string name)
+    {
+        return PlayerPrefs.GetInt(name) == 1;
+    }
+
     [ContextMenu("CLEAR ALL PROGRESSIONS !")]
     public void ClearAllProgression()
     {
