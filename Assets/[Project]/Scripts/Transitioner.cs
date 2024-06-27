@@ -69,7 +69,7 @@ public class Transitioner : MonoBehaviour
         });
     }
 
-    public void SceneTransition(Action toDoInTransition = null, Action toDoAfter = null)
+    public void SceneTransition(Action toDoInTransition = null, Action toDoAfter = null, bool initMenu = false)
     {
         _larrysContainer.anchoredPosition = _larryContainerOriginePos;
         _larrysContainer.gameObject.SetActive(true);
@@ -98,6 +98,9 @@ public class Transitioner : MonoBehaviour
             {
                 _larrysContainer.gameObject.SetActive(false);
                 toDoAfter?.Invoke();
+
+                if(initMenu)
+                    GameManager.instance.Start();
             });
         });
     }
