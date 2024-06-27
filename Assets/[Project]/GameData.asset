@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56ef31c8bdf57a44871aa5b6717b0ee, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  coinQuantity: 218
+  coinQuantity: 564
   baseSkin: {fileID: 11400000, guid: 44763a65f36b5e146b05d58ff3443970, type: 2}
   skinList:
   - {fileID: 11400000, guid: 44763a65f36b5e146b05d58ff3443970, type: 2}
@@ -26,15 +26,15 @@ MonoBehaviour:
   - ID: Level_1
     sceneName: LVL-01
     levelName: Level 1
-    fruitTaken: 010100
+    fruitTaken: 010101
     buttonSprite: {fileID: 21300000, guid: fdb459dff8c3f8c429486e77ad7d9230, type: 3}
   - ID: Level_2
     sceneName: LVL-02
     levelName: Level 2
-    fruitTaken: 0100
+    fruitTaken: 010101
     buttonSprite: {fileID: 21300000, guid: 6f000cadb95b84d4e9e2c9f2d7ecd9b3, type: 3}
   - ID: Level_3
     sceneName: LVL-03
     levelName: Level 3
     fruitTaken: 
-    buttonSprite: {fileID: 21300000, guid: b459b32cd63ed79458cafa4bace0bbde, type: 3}
+    buttonSprite: {fileID: 21300000, guid: 17ca56adbbd539c4d9052e4df3e2b969, type: 3}
