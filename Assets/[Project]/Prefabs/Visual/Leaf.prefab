@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7769092710533218397}
   - component: {fileID: 2453855906299532923}
   m_Layer: 0
-  m_Name: Leef
+  m_Name: Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
