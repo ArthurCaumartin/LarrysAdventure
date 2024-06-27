@@ -73,6 +73,7 @@ public class Transitioner : MonoBehaviour
     {
         _larrysContainer.anchoredPosition = _larryContainerOriginePos;
         _larrysContainer.gameObject.SetActive(true);
+        
         Vector2 startPos = _larrysContainer.anchoredPosition;
         Vector2 endPos = Vector2.zero;
 

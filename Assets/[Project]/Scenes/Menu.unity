@@ -1869,37 +1869,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1905874599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1905874600}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1905874600
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905874599}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.8706326, y: 6.1152945, z: -22.251099}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1963907926 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6654235294774461538, guid: 2b6daaedbe988044099f0a242c1ef153, type: 3}
@@ -2097,6 +2066,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: b396722e9656f5a4389739e26fc679f9, type: 3}
+    - target: {fileID: 1121413890023488316, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
+      propertyPath: _rotateSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1291792827826376444, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
       propertyPath: m_Name
       value: Core Game
@@ -2181,6 +2154,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7541738302515766042, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7541738302515766042, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8293394257050762945, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
       propertyPath: _menuCoinText
       value: 
@@ -2208,4 +2189,3 @@ SceneRoots:
   - {fileID: 1462478314}
   - {fileID: 584056720}
   - {fileID: 612031461}
-  - {fileID: 1905874600}
