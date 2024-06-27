@@ -24,6 +24,7 @@ public class InGameUI : MonoBehaviour
 
     public void SetEndLevelPanel(bool value)
     {
+        Time.timeScale = value ? 0 : 1;
         _endLevelPanel.SetActive(value);
     }
 
