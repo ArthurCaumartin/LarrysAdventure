@@ -26,11 +26,15 @@ public class MySplineAnimate : MonoBehaviour
 
         _distance += Time.deltaTime * _speed * _levelEvent.SpeedMult;
         transform.position = _currentSpline.EvaluatePosition(_distance / _currentSplineLenght);
-        if (_distance >= _currentSpline.GetLength() && _isLooping)
+        if (_distance >= _currentSpline.GetLength() && !_isLooping)
         {
             GameManager.instance.OnEndLevel();
             enabled = false;
         }
+
+        if (_distance >= _currentSpline.GetLength() && _isLooping)
+            _distance = 0;
+
     }
 
     public void ChangeSplineIndex(int newIndex)

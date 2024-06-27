@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
 
     public void OnEndLevel()
     {
+        print("");
         CanvasManager.instance.SetEndLevelUI();
     }
 

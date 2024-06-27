@@ -347,9 +347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DEBUG: 1
   _bodyPartPrefabs: {fileID: 5624770254715763629, guid: 550ebafa53ebe6849a6db1b2ad1e5f83, type: 3}
-  _bodyLenght: 40
+  _bodyLenght: 10
   _lineQuality: 0.005
-  _bodyPartOffset: 0.2
+  _bodyPartOffset: 0.6
   _bodyPartList: []
   _headTrackPoints: []
 --- !u!114 &2819469017979632833
