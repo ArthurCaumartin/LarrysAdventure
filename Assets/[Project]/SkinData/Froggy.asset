@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afc50815ac7f944a8f52dce1c95ad6f, type: 3}
+  m_Name: Froggy
+  m_EditorClassIdentifier: 
+  skinName: Froggy
+  coinPrice: 10
+  renderData:
+    eggSprite: {fileID: 21300000, guid: 92c8e8a412eb7da478f0bb44f2d71f30, type: 3}
+    headSprite: {fileID: 21300000, guid: db8e2bc8b104a464ab17f12f455ddd0e, type: 3}
+    bodyPart: {fileID: 21300000, guid: 5e17f30633cc65d42be9f185150e326a, type: 3}
+    lineBodyTex: {fileID: 0}
