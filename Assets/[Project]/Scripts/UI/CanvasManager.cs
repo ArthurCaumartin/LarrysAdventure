@@ -26,12 +26,22 @@ public class CanvasManager : MonoBehaviour
         // GameManager.instance.Start();
     }
 
+    public void SetEndLevelUI()
+    {
+        _inGameUi.SetEndLevelPanel(true);
+    }
+
     public void SetCoinText(int coinQuantity)
     {
         if (_menuCoinText)
             _menuCoinText.text = coinQuantity.ToString();
 
         _inGameUi?.SetCoinText(coinQuantity);
+    }
+
+    public void SetFruitImage(int index)
+    {
+        _inGameUi.GrabFruit(index);
     }
 
     public void SetInGameUi(InGameUI newInGameUi)

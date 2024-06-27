@@ -48,10 +48,16 @@ public class GameManager : MonoBehaviour
         _skinManager?.SetSkinFromData(_gameData.baseSkin, _gameData.skinList);
     }
 
+    public void OnEndLevel()
+    {
+        CanvasManager.instance.SetEndLevelUI();
+    }
+
     public void FruitTaken(string sceneName, int index)
     {
         print("Record : " + sceneName + index);
         _playerRecorder.SaveData(sceneName + index, 1);
+        CanvasManager.instance.SetFruitImage(index);
     }
 
     public int GetCoinQuantity()
