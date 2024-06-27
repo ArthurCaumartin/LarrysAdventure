@@ -41,13 +41,19 @@ public class MainMenu : MonoBehaviour
     public void BakeLevelButton(List<Level> levelList)
     {
         _levelList = levelList;
-        
+
         for (int i = 0; i < _levelList.Count; i++)
         {
             GameObject newButton = Instantiate(_menuButtonPrefab, _levelButtonParent);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = _levelList[i].levelName;
-            newButton.GetComponent<Image>().sprite = levelList[i].buttonSprite;             //ajout� par tim (arthur D et C)
-            newButton.GetComponent<ButtonLevel>().Initialise(levelList[i].sceneName, levelList[i].fruitTaken);
+            newButton.GetComponent<Image>().sprite = levelList[i].buttonSprite;
+
+            if (levelList[i].sceneName == "")
+            {
+                newButton.GetComponent<Button>().enabled = false;
+            }
+            else
+                newButton.GetComponent<ButtonLevel>().Initialise(levelList[i].sceneName, levelList[i].fruitTaken);
         }
     }
 }
