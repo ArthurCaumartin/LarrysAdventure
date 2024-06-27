@@ -24,7 +24,6 @@ public class Shop : MonoBehaviour
     private void Start()
     {
         _skinManager = GameManager.instance.GetComponent<SkinManager>();
-        print(_skinManager);
         OpenShop(false);
     }
 
@@ -42,7 +41,7 @@ public class Shop : MonoBehaviour
 
         if (_skinManager.TryBuySkin(skinClic))
         {
-            print("Buy new Skin");
+            // print("Buy new Skin");
             foreach (var item in _shopButtonList)
                 item.SetSelectState(false);
 
@@ -57,7 +56,7 @@ public class Shop : MonoBehaviour
 
         if (_scriptableSkinList.Count == 0)
         {
-            print("NO SKIN IN SHOP !");
+            // print("NO SKIN IN SHOP !");
             return;
         }
 

@@ -16,8 +16,8 @@ public class ButtonLevel : MonoBehaviour
     {
         _rectTransform = (RectTransform)transform;
 
-        print("Button Initialize : " + fruitStateList.Length);
-        print("Button Width : " + _rectTransform.rect.width);
+        // print("Button Initialize : " + fruitStateList.Length);
+        // print("Button Width : " + _rectTransform.rect.width);
 
 
         _sceneToLoad = sceneToLoad;
