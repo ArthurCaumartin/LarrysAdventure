@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2113617615139851808}
+  - {fileID: 2782292875232045063}
   m_Father: {fileID: 9193085441044174830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &597879578605550353
@@ -95,16 +95,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.2769394, y: 0.95947206}
+    - - {x: 0.29658368, y: 1.3250413}
+      - {x: -0.07292826, y: 1.4317467}
       - {x: -0.53902346, y: 1.0317644}
-      - {x: -0.8513069, y: 0.92692024}
-      - {x: -2.316976, y: -0.559095}
-      - {x: -2.455288, y: -0.8875145}
-      - {x: -2.2401543, y: -1.2827252}
-      - {x: -1.8669891, y: -1.3887631}
-      - {x: -1.5466827, y: -1.2413144}
-      - {x: -0.015766144, y: 0.33090436}
-      - {x: -0.075650215, y: 0.70078677}
+      - {x: -0.97252494, y: 0.7181558}
+      - {x: -1.4230081, y: 0.754534}
+      - {x: -1.817463, y: 0.47360983}
+      - {x: -1.9897195, y: 0.09680726}
+      - {x: -1.9994913, y: -0.14726986}
+      - {x: -2.2275283, y: -0.530336}
+      - {x: -2.6438491, y: -1.2915748}
+      - {x: -2.516262, y: -1.6733166}
+      - {x: -1.9882072, y: -1.5975274}
+      - {x: -1.6140262, y: -1.2076428}
+      - {x: -1.2864634, y: -1.001511}
+      - {x: -0.86192816, y: -0.9419656}
+      - {x: -0.5298034, y: -0.6930971}
+      - {x: -0.2436814, y: -0.21746631}
+      - {x: -0.23799923, y: 0.19621766}
+      - {x: 0.36208162, y: 1.0375036}
   m_UseDelaunayMesh: 0
 --- !u!114 &4069725668214469436
 MonoBehaviour:
@@ -118,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ae6a97449ccfd49939d9e87b14e718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1680388316743955070
+--- !u!1 &2419175486976345935
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,37 +135,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2113617615139851808}
-  - component: {fileID: 6746494566553447000}
+  - component: {fileID: 2782292875232045063}
+  - component: {fileID: 5580545482025735890}
   m_Layer: 0
-  m_Name: Larry's Adventure Ennemy-03
+  m_Name: ennemis2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2113617615139851808
+--- !u!4 &2782292875232045063
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680388316743955070}
+  m_GameObject: {fileID: 2419175486976345935}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.25, y: -0.21, z: 0}
-  m_LocalScale: {x: 0.4799, y: 0.4799, z: 0.4799}
+  m_LocalRotation: {x: -0, y: -0, z: 0.39955944, w: 0.9167073}
+  m_LocalPosition: {x: -1.19, y: -0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 585439655190127676}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6746494566553447000
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.101}
+--- !u!212 &5580545482025735890
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680388316743955070}
+  m_GameObject: {fileID: 2419175486976345935}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -191,12 +200,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 289c939dfaf796242a6d3be8632e6c34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0de7b675683e2f04db6b2da2b41d4087, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.43, y: 10.43}
+  m_Size: {x: 20, y: 20}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
