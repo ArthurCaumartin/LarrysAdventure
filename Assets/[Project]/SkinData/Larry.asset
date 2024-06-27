@@ -15,7 +15,7 @@ MonoBehaviour:
   skinName: Larry
   coinPrice: 0
   renderData:
-    eggSprite: {fileID: 21300000, guid: a567f49f7521a2a4ba05932f1bdb648c, type: 3}
+    eggSprite: {fileID: 21300000, guid: f6f5a08343775a44cbef59f94750aaef, type: 3}
     headSprite: {fileID: 21300000, guid: 73668ea9dda720142bcda2e30a244415, type: 3}
     bodyPart: {fileID: 0}
     lineBodyTex: {fileID: 2800000, guid: a50d9332487cc474c929f7a9295b2ced, type: 3}
