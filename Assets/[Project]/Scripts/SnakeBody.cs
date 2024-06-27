@@ -35,7 +35,7 @@ public class SnakeBody : MonoBehaviour
             _headTrackPoints.Add(newPart.transform.position);
 
         }
-        
+
         GetComponent<PlayerSkinSetter>().Initialize(_bodyPartList);
     }
 
@@ -106,8 +106,14 @@ public class SnakeBody : MonoBehaviour
 
         for (int i = 0; i < _bodyPartList.Count; i++)
         {
-            Vector3 newUp = _bodyPartList[i].transform.position - _bodyPartList[i].transform.position;
-            _bodyPartList[i].transform.up = newUp.normalized;
+            try
+            {
+                Vector3 newUp = _bodyPartList[i + 1].transform.position - _bodyPartList[i].transform.position;
+                _bodyPartList[i].transform.up = newUp.normalized;
+            }
+            catch (System.Exception)
+            {
+            }
         }
     }
 
