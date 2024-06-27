@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [Space]
     [SerializeField] private SkinManager _skinManager;
     private PlayerPrefRecorder _playerRecorder;
+    private SoundManager _soundManager;
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        _soundManager = GetComponentInChildren<SoundManager>();
         _playerRecorder = GetComponent<PlayerPrefRecorder>();
 
 
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
         _gameData.coinQuantity += value;
         CanvasManager.instance.SetCoinText(_gameData.coinQuantity);
         _playerRecorder.SaveData("coin", _gameData.coinQuantity);
+        _soundManager.PlayCoinSfx();
     }
 
     public void BuyStuff(int price)
