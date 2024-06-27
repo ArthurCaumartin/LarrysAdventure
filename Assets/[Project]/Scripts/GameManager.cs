@@ -33,8 +33,7 @@ public class GameManager : MonoBehaviour
 
         if (_takeSaveData)
         {
-            // _gameData.coinQuantity = _playerRecorder.GetData("coin");
-
+            _gameData.coinQuantity = _playerRecorder.GetData("coin");
             for (int i = 0; i < _gameData.levelList.Count; i++)
             {
                 for (int y = 0; y < _gameData.levelList[i].fruitTaken.Length; y++)
