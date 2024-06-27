@@ -228,6 +228,8 @@ MonoBehaviour:
   _bounceDuration: 0.15
   _speed: 2.65
   _offSet: 3.02
+  _rotationSpeed: 0
+  _rotationOffSet: 0
 --- !u!1001 &180232424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1789,6 +1791,8 @@ MonoBehaviour:
   _bounceDuration: 0.15
   _speed: 2.65
   _offSet: 3.02
+  _rotationSpeed: 0
+  _rotationOffSet: 0
 --- !u!1 &1864171379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,6 +1929,8 @@ MonoBehaviour:
   _bounceDuration: 0
   _speed: 2.65
   _offSet: 3.02
+  _rotationSpeed: 0
+  _rotationOffSet: 0
 --- !u!114 &1966717248 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4113171914149337731, guid: c5e0df92dfaaf9d48b54fc5bbb2aa3b6, type: 3}
@@ -1989,6 +1995,8 @@ MonoBehaviour:
   _bounceDuration: 0.15
   _speed: 2.65
   _offSet: 3.02
+  _rotationSpeed: 0
+  _rotationOffSet: 0
 --- !u!1 &2106315500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2113,10 @@ PrefabInstance:
       propertyPath: _shop
       value: 
       objectReference: {fileID: 381424099}
+    - target: {fileID: 3399832202569392764, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a50d9332487cc474c929f7a9295b2ced, type: 3}
     - target: {fileID: 4337638271827521162, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
       propertyPath: m_Pivot.x
       value: 0.49999988
