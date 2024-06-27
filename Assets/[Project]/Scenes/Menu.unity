@@ -2181,6 +2181,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8289425873958094268, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
+      propertyPath: _takeSaveData
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8293394257050762945, guid: c8c210fcde5c2864f8364cdfad40b7db, type: 3}
       propertyPath: _menuCoinText
       value: 
