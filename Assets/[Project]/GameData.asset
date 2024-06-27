@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56ef31c8bdf57a44871aa5b6717b0ee, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  coinQuantity: 263
+  coinQuantity: 218
   baseSkin: {fileID: 11400000, guid: 44763a65f36b5e146b05d58ff3443970, type: 2}
   skinList:
   - {fileID: 11400000, guid: 44763a65f36b5e146b05d58ff3443970, type: 2}

@@ -96,7 +96,7 @@ public class SnakeBody : MonoBehaviour
             {
                 _headTrackPoints.Add(transform.position);
                 // check if toomuch points -> RemoveAt 0
-                if (_headTrackPoints.Count > _bodyLenght * 200)
+                if (_headTrackPoints.Count > _bodyLenght * 50)
                     _headTrackPoints.RemoveAt(0);
             }
         }
